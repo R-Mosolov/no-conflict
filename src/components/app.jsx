@@ -1,13 +1,21 @@
 import React from "react";
-import Logo from "./logo/logo.jsx";
-import ConflictType from "./question-blocks/conflict-type.jsx";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import Logo from "./logo/logo";
+import Main from "../pages/main";
+import Psychologist from "../pages/psychologist";
+import Psychotherapist from "../pages/psychotherapist";
 
 function App() {
   return (
-      <div className="App container w-50">
-          <Logo />
-          <ConflictType />
-      </div>
+      <Router>
+          <div className="App container w-50">
+              <Logo />
+              <Route path="/" exact component={ Main } />
+              <Route path="/psychologist" exact component={ Psychologist } />
+              <Route path="/psychotherapist" exact component={ Psychotherapist } />
+          </div>
+      </Router>
   );
 }
 
