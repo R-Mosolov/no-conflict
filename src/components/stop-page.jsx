@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 class StopPage extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
@@ -13,7 +9,7 @@ class StopPage extends Component {
                 <p className="mt-3">Пожалуйста, обратитесь к квалифицированному { this.props.specialistInNominative }.</p>
 
                 <a target="_blank" href={ this.props.link }>
-                    <button className="mt-3 mr-3 btn btn-success">Найти { this.props.specialistInDative }</button>
+                    <button className="mt-3 mr-2 btn btn-success">Найти { this.props.specialistInDative }</button>
 
                     <Link to="/">
                         <button className="mt-3 btn btn-secondary">Вернуться на главную</button>

@@ -3,3 +3,7 @@
     font-size: 36px;
     color: limegreen;
 }
+
+.logo p:hover {
+    color: lightgreen;
+}
