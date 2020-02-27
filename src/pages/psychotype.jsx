@@ -1,14 +1,14 @@
 import React from "react";
-
-import CreateQuestion from "../directives/create-question";
 import { Link } from "react-router-dom";
+
+import createQuestion from "../directives/create-question";
 
 function Psychotype() {
     return (
         <div>
             <h1>2. Определение психотипа</h1>
 
-            { CreateQuestion(
+            { createQuestion(
                 'conflict-type','2.1. Какой у Вас психотип?',
                 [['choleric', 'Холерик'], ['sanguine', 'Сангвиник'],
                     ['phlegmatic', 'Флегматик'], ['melancholic', 'Меланхолик']]

@@ -1,6 +1,6 @@
 import React from "react";
 
-function CreateQuestion(radioName, question, idsAndLabelNames) {
+function createQuestion(radioName, question, idsAndLabelNames) {
     function createAnswers() {
         let arr = [];
         const iterable = new Map(idsAndLabelNames);
@@ -29,4 +29,4 @@ function CreateQuestion(radioName, question, idsAndLabelNames) {
     )
 }
 
-export default CreateQuestion;
+export default createQuestion;
