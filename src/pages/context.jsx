@@ -1,25 +1,23 @@
 import React from "react";
 
+import Title from "../components/title";
+import FormNavigation from "../components/form-navigation";
+
 import createQuestion from "../directives/create-question";
-import { Link } from "react-router-dom";
 
 function Context() {
     return (
         <div>
-            <h1>3. Определение контекста</h1>
+            <Title titleText="3. Определение контекста" />
 
             { createQuestion(
                 'conflict-type','3.1. Где произошёл Ваш конфликт?',
                 [['home', 'Дома'], ['work', 'На работе'],
-                    ['friends', 'В кругу друзей'], ['hobby', 'В секции (хобби)']]
-            ) }
+                    ['friends', 'В кругу друзей'], ['hobby', 'В секции (хобби)']]) }
 
-            <Link to="/sections/psychotype">
-                <button className="mt-3 btn btn-secondary col-6">Назад</button>
-            </Link>
-            <Link to="/solution">
-                <button className="mt-3 btn btn-success col-6">Далее</button>
-            </Link>
+            <FormNavigation
+                backLink="/sections/psychotype"
+                forwardLink="/solution" />
         </div>
     );
 }

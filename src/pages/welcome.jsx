@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Title from "../components/title";
+
 function Welcome() {
     return (
         <div>
-            <h1 className="mt-3">Приветствуем Вас!</h1>
+            <Title titleText="Приветствуем Вас!" />
 
             <p className="mt-3">Данный сервис поможет Вам найти выход из конфликтной ситуации. Для этого Вам нужно
                 будет заполнить небольшую анкету, состоящую из 4 блоков. Старайтесь отвечать на вопросы максимально

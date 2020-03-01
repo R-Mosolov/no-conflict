@@ -1,25 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import Title from "../components/title";
+import FormNavigation from "../components/form-navigation";
 
 import createQuestion from "../directives/create-question";
 
 function Psychotype() {
     return (
         <div>
-            <h1>2. Определение психотипа</h1>
+            <Title titleText="2. Определение психотипа" />
 
             { createQuestion(
                 'conflict-type','2.1. Какой у Вас психотип?',
                 [['choleric', 'Холерик'], ['sanguine', 'Сангвиник'],
-                    ['phlegmatic', 'Флегматик'], ['melancholic', 'Меланхолик']]
-            ) }
+                    ['phlegmatic', 'Флегматик'], ['melancholic', 'Меланхолик']]) }
 
-            <Link to="/sections/conflict-type">
-                <button className="mt-3 btn btn-secondary col-6">Назад</button>
-            </Link>
-            <Link to="/sections/context">
-                <button className="mt-3 btn btn-success col-6">Далее</button>
-            </Link>
+            <FormNavigation
+                backLink="/sections/conflict-type"
+                forwardLink="/sections/context" />
         </div>
     );
 }

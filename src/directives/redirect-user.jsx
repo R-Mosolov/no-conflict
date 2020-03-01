@@ -1,6 +1,6 @@
-import chooseAnswer from "../directives/choose-answer";
+import showAlert from "./show-alert";
 
-function redirect(event) {
+function redirectUser(event) {
     const psychological = document.getElementById('psychological').checked;
     const psycho = document.getElementById('psycho').checked;
     const social = document.getElementById('social').checked;
@@ -15,7 +15,7 @@ function redirect(event) {
         return window.location.pathname = '/sections/psychotype';
     }
 
-    return chooseAnswer();
+    return showAlert();
 }
 
-export default redirect;
+export default redirectUser;

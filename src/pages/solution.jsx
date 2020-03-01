@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Title from "../components/title";
+
 function Solution() {
     return (
         <div>
-            <h1 className="mt-3">Благодарим за ответы!</h1>
+            <Title titleText="Благодарим за ответы!" />
 
             <p className="mt-3">Исходя из Ваших ответов, рекомендуем Вам следующее решение конфликтной ситуации.</p>
             <ol>

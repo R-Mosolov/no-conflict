@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import Title from "./title";
+
 class StopPage extends Component {
     render() {
         return (
             <div>
-                <h1 className="mt-3">К сожалению, мы не сможем Вам помочь!</h1>
+                <Title titleText="К сожалению, мы не сможем Вам помочь!" />
                 <p className="mt-3">Пожалуйста, обратитесь к квалифицированному { this.props.specialistInNominative }.</p>
 
                 <Link to="/">
