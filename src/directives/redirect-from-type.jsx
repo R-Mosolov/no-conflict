@@ -1,6 +1,6 @@
 import showAlert from "./show-alert";
 
-function redirectUser(event) {
+function redirectFromType(event) {
     const psychological = document.getElementById('psychological').checked;
     const psycho = document.getElementById('psycho').checked;
     const social = document.getElementById('social').checked;
@@ -15,7 +15,7 @@ function redirectUser(event) {
         return window.location.pathname = '/sections/psychotype';
     }
 
-    return showAlert();
+    return showAlert('navigation-conflict-type');
 }
 
-export default redirectUser;
+export default redirectFromType;

@@ -4,22 +4,22 @@ import Title from "../components/title";
 import FormNavigation from "../components/form-navigation";
 
 import createQuestion from "../directives/create-question";
-import redirectUser from "../directives/redirect-user";
+import redirectFromType from "../directives/redirect-from-type";
 
 function ConflictType() {
     return (
         <div>
-            <Title titleText="1. Тип конфликта" />
+            <Title titleText="2. Тип конфликта" />
 
             { createQuestion(
-                'conflict-type','1.1. Выберите тип Вашего конфликта',
+                'conflict-type','Выберите тип Вашего конфликта',
                 [['psychological', 'Психологический'],
                     ['psycho', 'Психический'], ['social', 'Социальный']] ) }
 
             <FormNavigation
-                backLink="/"
+                backLink="/sections/conflict-existence"
                 forwardLink="/sections/psychotype"
-                onClick={ redirectUser } />
+                onClick={ redirectFromType } />
         </div>
     );
 }

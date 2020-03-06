@@ -8,7 +8,7 @@ function createQuestion(radioName, question, idsAndLabelNames) {
         for (let [id, labelName] of iterable) {
             arr.push(
                 <div className="input-group mt-1">
-                    <div className="input-group-prepend">
+                    <div className="answer input-group-prepend">
                         <div className="input-group-text"><input type="radio" name={ radioName } id={ id }/></div>
                     </div>
 
@@ -22,7 +22,7 @@ function createQuestion(radioName, question, idsAndLabelNames) {
 
     return (
         <div>
-            <p className="mt-4">{ question }</p>
+            <p className="question mt-4">{ question }</p>
 
             { createAnswers() }
         </div>

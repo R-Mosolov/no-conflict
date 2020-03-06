@@ -15,7 +15,7 @@ function Welcome() {
             <p className="mt-3">Все полученные результаты являются анонимными. Они будут использоваться
                 исключительно в научных целях и только в обобщённом виде. Ответы на вопросы займут около 5-7 минут.</p>
 
-            <Link to="/sections/conflict-type">
+            <Link to="/sections/conflict-existence">
                 <button className="mt-2 btn btn-success col-12">Далее</button>
             </Link>
         </div>
