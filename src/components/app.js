@@ -6,10 +6,12 @@ import Welcome from "../pages/welcome";
 
 import ConflictExistence from "../pages/conflict-existence";
 import ConflictType from "../pages/conflict-type";
-import Psychotherapist from "../pages/psychotherapist";
-import Psychologist from "../pages/psychologist";
+import Psychotherapist from "../pages/stop-pages/psychotherapist";
 
+import Psychologist from "../pages/stop-pages/psychologist";
 import Psychotype from "../pages/psychotype";
+import Consultation from "../pages/stop-pages/consultation";
+
 import Solution from "../pages/solution";
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
 
               <Route path="/psychologist" exact component={ Psychologist } />
               <Route path="/psychotherapist" exact component={ Psychotherapist } />
+              <Route path="/consultation" exact component={ Consultation } />
+
               <Route path="/solution" exact component={ Solution } />
           </div>
       </Router>
