@@ -22,7 +22,7 @@ function createQuestion(radioName, question, idsAndLabelNames) {
 
     return (
         <div>
-            <h5 className="question mt-4">{ question }</h5>
+            <h6 className="question mt-4 mb-3">{ question }</h6>
 
             { createAnswers() }
         </div>

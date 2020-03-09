@@ -12,7 +12,7 @@ function redirectFromExistence(event) {
         return window.location.pathname = '/consultation';
     }
 
-    return showAlert('navigation-conflict-type');
+    return showAlert('navigation-conflict-existence');
 }
 
 export default redirectFromExistence;

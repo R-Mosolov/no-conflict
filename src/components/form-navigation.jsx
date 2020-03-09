@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class FormNavigation extends Component {
     render() {
         return (
-            <nav className={ this.props.id } >
+            <nav id={ this.props.id } >
                 <Link to={ this.props.backLink }>
                     <button className="mt-3 btn btn-secondary col-6">Назад</button>
                 </Link>

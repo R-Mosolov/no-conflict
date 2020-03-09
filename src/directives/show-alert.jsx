@@ -1,7 +1,7 @@
-function showAlert() {
-    const navigation = document.getElementsByClassName('navigation');
+function showAlert(id) {
+    const navigation = document.getElementById(`${id}`);
 
-    return navigation.insertAdjacentHTML('beforebegin',
+    navigation.insertAdjacentHTML('beforebegin',
         '<div style="margin-top: 12px; color: red"><b>Пожалуйста, выберите один из вариантов ответа.</b></div>');
 }
 

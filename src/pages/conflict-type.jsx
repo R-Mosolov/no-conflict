@@ -30,6 +30,7 @@ function ConflictType() {
 
 
             <FormNavigation
+                id="navigation-conflict-type"
                 backLink="/sections/conflict-existence"
                 forwardLink="/sections/psychotype"
                 onClick={ redirectFromType } />

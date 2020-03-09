@@ -12,12 +12,13 @@ function ConflictExistence() {
             <Title titleText="1. Наличие конфликта" />
 
             { createQuestion(
-                'conflict-type', 'В сложившейся ситуации Вы можете определить мешает ли кто-либо Вам ' +
+                'conflict-type', '1.1. В сложившейся ситуации Вы можете определить мешает ли кто-либо Вам ' +
                 'психологически или физически реализовать свой интерес?',
                 [['existent-conflict', 'Да, мешает'],
                     ['non-existent-conflict', 'Нет, явного вмешательства не наблюдаю']] ) }
 
             <FormNavigation
+                id="navigation-conflict-existence"
                 backLink="/"
                 forwardLink="/sections/conflict-type"
                 onClick={ redirectFromExistence } />
