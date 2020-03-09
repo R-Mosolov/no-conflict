@@ -1,10 +1,10 @@
 import React from "react";
 
-import Title from "../components/title";
-import FormNavigation from "../components/form-navigation";
+import Title from "../../components/title";
+import FormNavigation from "../../components/form-navigation";
 
-import createQuestion from "../directives/create-question";
-import checkAnswers from "../directives/check-answers";
+import createQuestion from "../../directives/create-question";
+import checkAnswers from "../../directives/check-answers";
 
 function Psychotype() {
     return (
@@ -18,7 +18,7 @@ function Psychotype() {
 
             <FormNavigation
                 backLink="/sections/conflict-type"
-                forwardLink="/solution"
+                forwardLink="/sections/recommendation"
                 onClick={ () => checkAnswers(['choleric', 'sanguine', 'phlegmatic', 'melancholic'], 'navigation-psychotype') }/>
         </div>
     );
