@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "author": "Roman Mosolov (Russia, Kazan, ITIS KFU)",
   "private": true,
+  "engines": {
+    "node": "^12.16.0"
+  },
   "dependencies": {
     "@popperjs/core": "^2.0.6",
     "@testing-library/jest-dom": "^4.2.4",
@@ -13,7 +16,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
