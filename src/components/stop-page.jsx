@@ -13,7 +13,7 @@ class StopPage extends Component {
                 <Link to="/">
                     <button className="mt-2 btn btn-secondary col-6">Вернуться на главную</button>
                 </Link>
-                <a target="_blank" href={ this.props.link }>
+                <a href={ this.props.link }>
                     <button className="mt-2 btn btn-success col-6">{ this.props.specialistInDative }</button>
                 </a>
             </div>

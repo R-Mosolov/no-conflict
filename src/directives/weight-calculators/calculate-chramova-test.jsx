@@ -53,8 +53,8 @@ function calculateChramovaTest(event) {
         return showAlert('navigation-conflict-reason-and-place');
     }
 
-    alert(recommendationText);
-    return window.location.pathname = '/sections/recommendation';
+    window.location.pathname = '/sections/recommendation';
+    return localStorage.setItem('recommendation-text', recommendationText);
 }
 
 export default calculateChramovaTest;

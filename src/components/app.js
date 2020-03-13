@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Logo from "./logo/logo";
 import Welcome from "../pages/welcome";
+import ChramovaContacts from "../pages/chramova-contacts";
 
 import ConflictExistence from "../pages/chramova-questions/conflict-existence";
 import ConflictObject from "../pages/chramova-questions/conflict-object";
@@ -23,19 +24,22 @@ function App() {
           <div className="App container w-50">
               <Logo />
 
-              <Route path="/" exact component={ Welcome } />
+              <main>
+                  <Route path="/" exact component={ Welcome } />
+                  <Route path="/chramova-contacts" component={ ChramovaContacts } />
 
-              <Route path="/sections/conflict-existence" component={ ConflictExistence } />
-              <Route path="/sections/conflict-object" component={ ConflictObject } />
-              <Route path="/sections/conflict-reason-and-place" component={ ConflictReasonAndPlace } />
-              <Route path="/sections/recommendation" component={ Recommendation } />
+                  <Route path="/sections/conflict-existence" component={ ConflictExistence } />
+                  <Route path="/sections/conflict-object" component={ ConflictObject } />
+                  <Route path="/sections/conflict-reason-and-place" component={ ConflictReasonAndPlace } />
+                  <Route path="/sections/recommendation" component={ Recommendation } />
 
-              <Route path="/psychologist" component={ Psychologist } />
-              <Route path="/consultation" component={ Consultation } />
+                  <Route path="/psychologist" component={ Psychologist } />
+                  <Route path="/consultation" component={ Consultation } />
 
-              <Route path="/sections/tomas-kilmann-1" component={ QuestionsFromOneToTen } />
-              <Route path="/sections/tomas-kilmann-2" component={ QuestionsFromElevenToTwenty } />
-              <Route path="/sections/tomas-kilmann-3" component={ QuestionsFromTwentyOneToThirty } />
+                  <Route path="/sections/tomas-kilmann-1" component={ QuestionsFromOneToTen } />
+                  <Route path="/sections/tomas-kilmann-2" component={ QuestionsFromElevenToTwenty } />
+                  <Route path="/sections/tomas-kilmann-3" component={ QuestionsFromTwentyOneToThirty } />
+              </main>
           </div>
       </Router>
   );
