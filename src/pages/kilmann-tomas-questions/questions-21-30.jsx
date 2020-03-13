@@ -46,8 +46,7 @@ function QuestionsFromTwentyOneToThirty() {
 
             <FormNavigation
                 backLink="/sections/tomas-kilmann-2"
-                forwardLink="/"
-                onClick={ () => checkAnswers(['choleric', 'sanguine', 'phlegmatic', 'melancholic'], 'navigation-psychotype') }/>
+                forwardLink="/" />
         </div>
     );
 }

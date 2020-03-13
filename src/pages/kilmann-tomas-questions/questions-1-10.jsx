@@ -5,7 +5,6 @@ import FormNavigation from "../../components/form-navigation";
 import questions from "./data/questions";
 
 import createQuestion from "../../directives/create-question";
-import checkAnswers from "../../directives/check-answers";
 
 function QuestionsFromOneToTen() {
     return (
@@ -45,9 +44,9 @@ function QuestionsFromOneToTen() {
                 [['a10', `${questions.q10.aA}`], ['b10', `${questions.q10.aB}`]]) }
 
             <FormNavigation
+
                 backLink="/sections/recommendation"
-                forwardLink="/sections/tomas-kilmann-2"
-                onClick={ () => checkAnswers(['choleric', 'sanguine', 'phlegmatic', 'melancholic'], 'navigation-psychotype') }/>
+                forwardLink="/sections/tomas-kilmann-2" />
         </div>
     );
 }

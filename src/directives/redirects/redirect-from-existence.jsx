@@ -1,4 +1,4 @@
-import showAlert from "./show-alert";
+import showAlert from "../show-alert";
 
 function redirectFromExistence(event) {
     const existentConflict = document.getElementById('existent-conflict').checked;
@@ -7,7 +7,7 @@ function redirectFromExistence(event) {
     event.preventDefault();
 
     if (existentConflict) {
-        return window.location.pathname = '/sections/conflict-type';
+        return window.location.pathname = '/sections/conflict-object';
     } else if (nonExistentConflict) {
         return window.location.pathname = '/consultation';
     }

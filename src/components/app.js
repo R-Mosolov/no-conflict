@@ -5,15 +5,14 @@ import Logo from "./logo/logo";
 import Welcome from "../pages/welcome";
 
 import ConflictExistence from "../pages/chramova-questions/conflict-existence";
-import ConflictType from "../pages/chramova-questions/conflict-type";
-import Psychotype from "../pages/chramova-questions/psychotype";
+import ConflictObject from "../pages/chramova-questions/conflict-object";
+import ConflictReasonAndPlace from "../pages/chramova-questions/conflict-reason-and-place";
 
 import QuestionsFromOneToTen from "../pages/kilmann-tomas-questions/questions-1-10";
 import QuestionsFromElevenToTwenty from "../pages/kilmann-tomas-questions/questions-11-20";
 import QuestionsFromTwentyOneToThirty from "../pages/kilmann-tomas-questions/questions-21-30";
 
 import Psychologist from "../pages/stop-pages/psychologist";
-import Psychotherapist from "../pages/stop-pages/psychotherapist";
 import Consultation from "../pages/stop-pages/consultation";
 
 import Recommendation from "../pages/chramova-questions/recommendation";
@@ -26,18 +25,17 @@ function App() {
 
               <Route path="/" exact component={ Welcome } />
 
-              <Route path="/sections/conflict-existence" exact component={ ConflictExistence } />
-              <Route path="/sections/conflict-type" exact component={ ConflictType } />
-              <Route path="/sections/psychotype" exact component={ Psychotype } />
-              <Route path="/sections/recommendation" exact component={ Recommendation } />
+              <Route path="/sections/conflict-existence" component={ ConflictExistence } />
+              <Route path="/sections/conflict-object" component={ ConflictObject } />
+              <Route path="/sections/conflict-reason-and-place" component={ ConflictReasonAndPlace } />
+              <Route path="/sections/recommendation" component={ Recommendation } />
 
-              <Route path="/psychologist" exact component={ Psychologist } />
-              <Route path="/psychotherapist" exact component={ Psychotherapist } />
-              <Route path="/consultation" exact component={ Consultation } />
+              <Route path="/psychologist" component={ Psychologist } />
+              <Route path="/consultation" component={ Consultation } />
 
-              <Route path="/sections/tomas-kilmann-1" exact component={ QuestionsFromOneToTen } />
-              <Route path="/sections/tomas-kilmann-2" exact component={ QuestionsFromElevenToTwenty } />
-              <Route path="/sections/tomas-kilmann-3" exact component={ QuestionsFromTwentyOneToThirty } />
+              <Route path="/sections/tomas-kilmann-1" component={ QuestionsFromOneToTen } />
+              <Route path="/sections/tomas-kilmann-2" component={ QuestionsFromElevenToTwenty } />
+              <Route path="/sections/tomas-kilmann-3" component={ QuestionsFromTwentyOneToThirty } />
           </div>
       </Router>
   );

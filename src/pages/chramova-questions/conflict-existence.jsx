@@ -4,7 +4,7 @@ import Title from "../../components/title";
 import FormNavigation from "../../components/form-navigation";
 
 import createQuestion from "../../directives/create-question";
-import redirectFromExistence from "../../directives/redirect-from-existence";
+import redirectFromExistence from "../../directives/redirects/redirect-from-existence";
 
 function ConflictExistence() {
     return (
@@ -20,7 +20,7 @@ function ConflictExistence() {
             <FormNavigation
                 id="navigation-conflict-existence"
                 backLink="/"
-                forwardLink="/sections/conflict-type"
+                forwardLink="/sections/conflict-object"
                 onClick={ redirectFromExistence } />
         </div>
     );
