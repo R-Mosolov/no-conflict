@@ -1,24 +1,20 @@
 {
   "name": "no-conflict",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Roman Mosolov (Russia, Kazan, ITIS KFU)",
   "private": true,
   "engines": {
-    "node": "12.16.0"
+    "node": "^12.16.0"
   },
   "dependencies": {
-    "@oclif/command": "^1.5.19",
-    "@popperjs/core": "^2.0.6",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
-    "heroku": "^7.39.0",
-    "jquery": "^3.4.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
