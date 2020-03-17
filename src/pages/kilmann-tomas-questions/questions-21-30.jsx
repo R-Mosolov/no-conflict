@@ -45,7 +45,7 @@ function QuestionsFromTwentyOneToThirty() {
 
             <FormNavigation
                 backLink="/sections/tomas-kilmann-2"
-                forwardLink="/" />
+                forwardLink="/sections/recommendation-tk" />
         </div>
     );
 }

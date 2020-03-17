@@ -14,7 +14,7 @@ function Recommendation() {
                 для Вас способы решения конфликтных ситуаций.</p>
 
             <Link to="/sections/conflict-reason-and-place">
-            <button className="mt-3 btn btn-secondary w-100">Вернуться назад</button>
+            <button className="mt-2 btn btn-secondary w-100">Вернуться назад</button>
             </Link>
             <br/>
             <Link to="/sections/tomas-kilmann-1">
