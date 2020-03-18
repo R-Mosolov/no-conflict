@@ -4,7 +4,7 @@
   "author": "Roman Mosolov (Russia, Kazan, ITIS KFU)",
   "private": true,
   "engines": {
-    "node": "^12.16.0"
+    "node": "12.16.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
