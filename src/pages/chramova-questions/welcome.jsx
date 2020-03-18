@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Title from "../components/title";
+import Title from "../../components/title";
 
 function Welcome() {
     return (

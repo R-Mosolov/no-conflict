@@ -1,10 +1,10 @@
 import React from "react";
 
-import Title from "../../components/title";
-import FormNavigation from "../../components/form-navigation";
+import Title from "../../../components/title";
+import FormNavigation from "../../../components/form-navigation";
 
-import createQuestion from "../../directives/create-question/create-question";
-import calculateChramovaTest from "../../directives/weight-calculators/calculate-chramova-test";
+import createQuestion from "../../../directives/create-question/create-question";
+import calculateChramovaTest from "./recommendation/calculate-chramova-test";
 
 function ConflictReasonAndPlace() {
     return (

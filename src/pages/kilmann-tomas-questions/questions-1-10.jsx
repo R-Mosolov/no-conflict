@@ -5,6 +5,7 @@ import FormNavigation from "../../components/form-navigation";
 import questions from "./data/questions";
 
 import createQuestionForTomasKilmann from "../../directives/create-question/create-question-tk/create-question-tk";
+import calculateTkFromOneToTen from "./recommendation-tk/calculate-tk-test/calculate-tk-1-10";
 
 function QuestionsFromOneToTen() {
     return (
@@ -44,9 +45,9 @@ function QuestionsFromOneToTen() {
                 [['a10', `${questions.q10.aA}`], ['b10', `${questions.q10.aB}`]]) }
 
             <FormNavigation
-
                 backLink="/sections/recommendation"
-                forwardLink="/sections/tomas-kilmann-2" />
+                forwardLink="/sections/tomas-kilmann-2"
+                onClick={ calculateTkFromOneToTen } />
         </div>
     );
 }

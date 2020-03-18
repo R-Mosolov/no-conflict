@@ -1,10 +1,10 @@
 import React from "react";
 
-import Title from "../../components/title";
-import FormNavigation from "../../components/form-navigation";
+import Title from "../../../components/title";
+import FormNavigation from "../../../components/form-navigation";
 
-import createQuestion from "../../directives/create-question/create-question";
-import redirectFromObject from "../../directives/redirects/redirect-from-object";
+import createQuestion from "../../../directives/create-question/create-question";
+import redirectFromObject from "../../../directives/redirects/redirect-from-object";
 
 function ConflictObject() {
     return (

@@ -5,6 +5,7 @@ import FormNavigation from "../../components/form-navigation";
 import questions from "./data/questions";
 
 import createQuestionForTomasKilmann from "../../directives/create-question/create-question-tk/create-question-tk";
+import calculateTkFromElevenToTwenty from "./recommendation-tk/calculate-tk-test/calculate-tk-11-20";
 
 function QuestionsFromElevenToTwenty() {
     return (
@@ -45,7 +46,8 @@ function QuestionsFromElevenToTwenty() {
 
             <FormNavigation
                 backLink="/sections/tomas-kilmann-1"
-                forwardLink="/sections/tomas-kilmann-3" />
+                forwardLink="/sections/tomas-kilmann-3"
+                onClick={ calculateTkFromElevenToTwenty } />
         </div>
     );
 }

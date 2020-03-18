@@ -5,7 +5,13 @@ function renderConflictStrategy() {
 
     const data = {
         datasets: [{
-            data: [0, 8, 7, 9, 6],
+            data: [
+                localStorage.getItem('confrontation'),
+                localStorage.getItem('collaboration'),
+                localStorage.getItem('compromise'),
+                localStorage.getItem('digression'),
+                localStorage.getItem('adaptation')
+            ],
             backgroundColor: [
                 'red',
                 'lightblue',

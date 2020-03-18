@@ -1,6 +1,6 @@
 import React from "react";
 
-import StopPage from "../../components/stop-page";
+import StopPage from "../../../components/stop-page";
 
 function Psychologist() {
     return (
