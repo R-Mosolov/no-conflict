@@ -44,14 +44,6 @@ function calculateTkTest() {
     localStorage.setItem('compromise', compromise);
     localStorage.setItem('digression', digression);
     localStorage.setItem('adaptation', adaptation);
-
-    return alert([
-        'Конфронтация: ' + confrontation,
-        'Сторудничество: ' + collaboration,
-        'Компромисс: ' + compromise,
-        'Уклонение: ' + digression,
-        'Приспособление: ' + adaptation
-    ]);
 }
 
 export default calculateTkTest;

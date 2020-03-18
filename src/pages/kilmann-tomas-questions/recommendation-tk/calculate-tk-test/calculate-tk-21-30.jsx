@@ -53,15 +53,6 @@ function calculateTkFromTwentyOneToThirty() {
     localStorage.setItem('compromise', oldCompromise + compromise);
     localStorage.setItem('digression', oldDigression + digression);
     localStorage.setItem('adaptation', oldAdaptation + adaptation);
-
-
-    return alert([
-        localStorage.getItem('confrontation'),
-        localStorage.getItem('collaboration'),
-        localStorage.getItem('compromise'),
-        localStorage.getItem('digression'),
-        localStorage.getItem('adaptation')
-    ]);
 }
 
 export default calculateTkFromTwentyOneToThirty;
