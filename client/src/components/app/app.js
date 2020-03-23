@@ -1,30 +1,32 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-
-import Logo from "./logo/logo";
-import Welcome from "../pages/chramova-questions/welcome";
-import ChramovaContacts from "../pages/chramova-questions/chramova-contacts";
-
-import ConflictExistence from "../pages/chramova-questions/sections/conflict-existence";
-import ConflictObject from "../pages/chramova-questions/sections/conflict-object";
-import ConflictReasonAndPlace from "../pages/chramova-questions/sections/conflict-reason-and-place";
-import Recommendation from "../pages/chramova-questions/sections/recommendation/recommendation";
+import "./app.css";
 
 
-import QuestionsFromOneToTen from "../pages/kilmann-tomas-questions/questions-1-10";
-import QuestionsFromElevenToTwenty from "../pages/kilmann-tomas-questions/questions-11-20";
-import QuestionsFromTwentyOneToThirty from "../pages/kilmann-tomas-questions/questions-21-30";
-import RecommendationForTomasKilmann from "../pages/kilmann-tomas-questions/recommendation-tk/recommendation-tk";
+import Logo from "../logo/logo";
+import Welcome from "../../pages/chramova-questions/welcome";
+import ChramovaContacts from "../../pages/chramova-questions/chramova-contacts";
 
-import Psychologist from "../pages/chramova-questions/stop-pages/psychologist";
-import Consultation from "../pages/chramova-questions/stop-pages/consultation";
+import ConflictExistence from "../../pages/chramova-questions/sections/conflict-existence";
+import ConflictObject from "../../pages/chramova-questions/sections/conflict-object";
+import ConflictReasonAndPlace from "../../pages/chramova-questions/sections/conflict-reason-and-place";
+import Recommendation from "../../pages/chramova-questions/sections/recommendation/recommendation";
+
+
+import QuestionsFromOneToTen from "../../pages/kilmann-tomas-questions/questions-1-10";
+import QuestionsFromElevenToTwenty from "../../pages/kilmann-tomas-questions/questions-11-20";
+import QuestionsFromTwentyOneToThirty from "../../pages/kilmann-tomas-questions/questions-21-30";
+import RecommendationForTomasKilmann from "../../pages/kilmann-tomas-questions/recommendation-tk/recommendation-tk";
+
+import Psychologist from "../../pages/chramova-questions/stop-pages/psychologist";
+import Consultation from "../../pages/chramova-questions/stop-pages/consultation";
 
 
 function App() {
   return (
       <Router>
-          <div className="App container w-50">
+          <div className="app container w-50 mb-5">
               <Logo />
 
               <main>

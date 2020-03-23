@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 class FormNavigation extends Component {
     render() {
         return (
-            <nav className="mb-5" id={ this.props.id } >
+            <nav className="mt-3" id={ this.props.id } >
                 <Link to={ this.props.backLink }>
-                    <button className="mt-3 btn btn-secondary col-6">Назад</button>
+                    <button className="btn btn-secondary col-lg-6">Назад</button>
                 </Link>
                 <Link to={ this.props.forwardLink }>
-                    <button className="mt-3 btn btn-success col-6" onClick={ this.props.onClick }>Далее</button>
+                    <button className="data-down-btn btn btn-success col-lg-6" onClick={ this.props.onClick }>Далее</button>
                 </Link>
             </nav>
         );
