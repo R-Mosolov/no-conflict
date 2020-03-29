@@ -7,12 +7,12 @@ function createQuestion(radioName, question, idsAndLabelNames) {
 
         for (let [id, labelName] of iterable) {
             arr.push(
-                <div className="mt-1 d-flex border rounded">
-                    <div className="answer pt-2 pl-3 pr-3 border custom-input-bg">
-                        <input type="radio" name={ radioName } id={ id }/>
+                <div className="input-group mt-1">
+                    <div className="answer input-group-prepend">
+                        <div className="input-group-text"><input type="radio" name={ radioName } id={ id }/></div>
                     </div>
 
-                    <label className="mt-2 pl-2 pr-1" htmlFor={ id }>{ labelName }</label>
+                    <label className="form-control" htmlFor={ id }>{ labelName }</label>
                 </div>
             );
         }

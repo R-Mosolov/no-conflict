@@ -1,8 +1,0 @@
-@media (min-width: 0px) and (max-width: 768px) {
-    .app { min-width: 100%; }
-    .data-down-btn { margin-top: 7px; }
-}
-@media (min-width: 769px) and (max-width: 992px) {
-    .app { min-width: 75%; }
-    .data-down-btn { margin-top: 7px; }
-}

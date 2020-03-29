@@ -17,7 +17,6 @@ function RecommendationForTomasKilmann() {
                 <canvas id="conflict-strategy" />
             </div>
 
-            <h2 className="mt-3">Описание стратегий:</h2>
             <ol className="pl-3">
                 <li><p className="mt-3"><b>Уклонение</b> эффективно в ситуациях, когда партнер обладает объективно большей
                     силой и использует ее в конфликтной борьбе. В общении со сложной конфликтной личностью

@@ -7,12 +7,12 @@ class ChramovaContacts extends Component {
     render() {
         return (
             <div>
-                <Title titleText="Визитка эксперта" />
+                <Title titleText="Визитка Е.В. Храмовой" />
 
-                <div className="mt-4 mb-4 p-4 bg-light border rounded">
-                    <div className="d-lg-flex justify-content-around  align-items-center">
-                        <img className="p-1" src="img/kfu-logo.png" style={{ width: 120 + "px", height: 120 + "px" }} />
-                        <p className="p-1">
+                <div className="mt-4 mb-3 p-5 bg-light border rounded">
+                    <div className="d-flex justify-content-around align-items-center">
+                        <img src="img/kfu-logo.png" style={{ width: 120 + "px", height: 120 + "px" }} />
+                        <p>
                             <br/><b>ХРАМОВА Евгения Валерьевна</b>,
                             <br/>Кандидат политических наук,
                             <br/>Доцент кафедры конфликтологии ИСФН К(П)ФУ,

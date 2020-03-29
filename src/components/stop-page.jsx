@@ -11,10 +11,10 @@ class StopPage extends Component {
                 <p className="mt-3">Пожалуйста, обратитесь к квалифицированному { this.props.specialistInNominative }.</p>
 
                 <Link to="/">
-                    <button className="mt-2 btn btn-secondary col-lg-6">Вернуться на главную</button>
+                    <button className="mt-2 btn btn-secondary col-6">Вернуться на главную</button>
                 </Link>
                 <a href={ this.props.link }>
-                    <button className="mt-2 btn btn-success col-lg-6">{ this.props.specialistInDative }</button>
+                    <button className="mt-2 btn btn-success col-6">{ this.props.specialistInDative }</button>
                 </a>
             </div>
         );
