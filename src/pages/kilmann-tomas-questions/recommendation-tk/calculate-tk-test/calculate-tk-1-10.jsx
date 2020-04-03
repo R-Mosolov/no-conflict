@@ -46,4 +46,7 @@ function calculateTkTest() {
     localStorage.setItem('adaptation', adaptation);
 }
 
-export default calculateTkTest;
+// export default calculateTkTest;
+
+// module.exports = checkAnswerById;
+module.exports = calculateTkTest;

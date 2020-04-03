@@ -20,8 +20,8 @@
   "scripts": {
     "start": "node_modules/.bin/react-scripts start",
     "build": "node_modules/.bin/react-scripts build",
-    "test": "node_modules/.bin/react-scripts test",
-    "eject": "node_modules/.bin/react-scripts eject"
+    "eject": "node_modules/.bin/react-scripts eject",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "setupFiles": [
+    "../src/__tests__/__mocks__/client.js"
+  ]
 }
