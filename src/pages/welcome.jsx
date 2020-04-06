@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Title from "../../components/title";
+import Title from "../components/title";
 
 function Welcome() {
     return (
@@ -22,7 +22,7 @@ function Welcome() {
             – <b className="text-info">под словом «оппонент»</b> – другую сторону Вашего конфликта. Например, мужа / жену,
                 работодателя / подчинённого и т.д.
 
-            <Link to="/sections/conflict-existence">
+            <Link to="/Hramova-test/conflict-existence">
                 <button className="mt-3 btn btn-success col-12">Далее</button>
             </Link>
         </div>

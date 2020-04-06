@@ -5,22 +5,22 @@ import "./app.css";
 
 
 import Logo from "../logo/logo";
-import Welcome from "../../pages/chramova-questions/welcome";
-import ChramovaContacts from "../../pages/chramova-questions/chramova-contacts";
+import Welcome from "../../pages/welcome";
+import HramovaContacts from "../../pages/hramova-contacts";
 
-import ConflictExistence from "../../pages/chramova-questions/sections/conflict-existence";
-import ConflictObject from "../../pages/chramova-questions/sections/conflict-object";
-import ConflictReasonAndPlace from "../../pages/chramova-questions/sections/conflict-reason-and-place";
-import Recommendation from "../../pages/chramova-questions/sections/recommendation/recommendation";
+import ConflictExistence from "../../pages/hramova-test/sections/conflict-existence";
+import ConflictObject from "../../pages/hramova-test/sections/conflict-object";
+import ConflictReasonAndPlace from "../../pages/hramova-test/sections/conflict-reason-and-place";
+import Recommendation from "../../pages/hramova-test/sections/recommendation/recommendation";
 
 
-import QuestionsFromOneToTen from "../../pages/kilmann-tomas-questions/questions-1-10";
-import QuestionsFromElevenToTwenty from "../../pages/kilmann-tomas-questions/questions-11-20";
-import QuestionsFromTwentyOneToThirty from "../../pages/kilmann-tomas-questions/questions-21-30";
-import RecommendationForTomasKilmann from "../../pages/kilmann-tomas-questions/recommendation-tk/recommendation-tk";
+import QuestionsFromOneToTen from "../../pages/tomas-kilmann-test/questions-1-10";
+import QuestionsFromElevenToTwenty from "../../pages/tomas-kilmann-test/questions-11-20";
+import QuestionsFromTwentyOneToThirty from "../../pages/tomas-kilmann-test/questions-21-30";
+import RecommendationForTomasKilmann from "../../pages/tomas-kilmann-test/recommendation-tk/recommendation-tk";
 
-import Psychologist from "../../pages/chramova-questions/stop-pages/psychologist";
-import Consultation from "../../pages/chramova-questions/stop-pages/consultation";
+import Psychologist from "../../pages/hramova-test/stop-pages/psychologist";
+import Consultation from "../../pages/hramova-test/stop-pages/consultation";
 
 
 function App() {
@@ -31,20 +31,20 @@ function App() {
 
               <main>
                   <Route path="/" exact component={ Welcome } />
-                  <Route path="/chramova-contacts" component={ ChramovaContacts } />
 
-                  <Route path="/sections/conflict-existence" component={ ConflictExistence } />
-                  <Route path="/sections/conflict-object" component={ ConflictObject } />
-                  <Route path="/sections/conflict-reason-and-place" component={ ConflictReasonAndPlace } />
-                  <Route path="/sections/recommendation" component={ Recommendation } />
+                  <Route path="/Hramova-test/conflict-existence" component={ ConflictExistence } />
+                  <Route path="/Hramova-test/conflict-object" component={ ConflictObject } />
+                  <Route path="/Hramova-test/conflict-reason-and-place" component={ ConflictReasonAndPlace } />
+                  <Route path="/Hramova-test/recommendation" component={ Recommendation } />
 
-                  <Route path="/psychologist" component={ Psychologist } />
-                  <Route path="/consultation" component={ Consultation } />
+                  <Route path="/Hramova-contacts" component={ HramovaContacts } />
+                  <Route path="/Hramova-test/psychologist" component={ Psychologist } />
+                  <Route path="/Hramova-test/consultation" component={ Consultation } />
 
-                  <Route path="/sections/tomas-kilmann-1" component={ QuestionsFromOneToTen } />
-                  <Route path="/sections/tomas-kilmann-2" component={ QuestionsFromElevenToTwenty } />
-                  <Route path="/sections/tomas-kilmann-3" component={ QuestionsFromTwentyOneToThirty } />
-                  <Route path="/sections/recommendation-tk" component={ RecommendationForTomasKilmann } />
+                  <Route path="/Tomas-Kilmann-test/section-1" component={ QuestionsFromOneToTen } />
+                  <Route path="/Tomas-Kilmann-test/section-2" component={ QuestionsFromElevenToTwenty } />
+                  <Route path="/Tomas-Kilmann-test/section-3" component={ QuestionsFromTwentyOneToThirty } />
+                  <Route path="/Tomas-Kilmann-test/recommendation" component={ RecommendationForTomasKilmann } />
               </main>
           </div>
       </Router>

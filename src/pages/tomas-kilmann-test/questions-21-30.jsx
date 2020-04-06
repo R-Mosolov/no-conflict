@@ -45,8 +45,8 @@ function QuestionsFromTwentyOneToThirty() {
                 [['a30', `${questions.q30.aA}`], ['b30', `${questions.q30.aB}`]]) }
 
             <FormNavigation
-                backLink="/sections/tomas-kilmann-2"
-                forwardLink="/sections/recommendation-tk"
+                backLink="/Tomas-Kilmann-test/section-2"
+                forwardLink="/Tomas-Kilmann-test/recommendation"
                 onClick={ calculateTkFromTwentyOneToThirty } />
         </div>
     );

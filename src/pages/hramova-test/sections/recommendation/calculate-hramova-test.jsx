@@ -1,6 +1,6 @@
 import showAlert from "../../../../directives/show-alert";
 
-function calculateChramovaTest(event) {
+function calculateHramovaTest(event) {
     const emotionalConflict = document.getElementById('emotional-conflict').checked;
     const socialConflict = document.getElementById('social-conflict').checked;
     const rationalConflict = document.getElementById('rational-conflict').checked;
@@ -53,8 +53,8 @@ function calculateChramovaTest(event) {
         return showAlert('navigation-conflict-reason-and-place');
     }
 
-    window.location.pathname = '/sections/recommendation';
+    window.location.pathname = '/Hramova-test/recommendation';
     return localStorage.setItem('recommendation-text', recommendationText);
 }
 
-export default calculateChramovaTest;
+export default calculateHramovaTest;

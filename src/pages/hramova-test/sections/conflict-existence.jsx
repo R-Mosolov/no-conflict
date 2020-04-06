@@ -20,7 +20,7 @@ function ConflictExistence() {
             <FormNavigation
                 id="navigation-conflict-existence"
                 backLink="/"
-                forwardLink="/sections/conflict-object"
+                forwardLink="/Hramova-test/conflict-object"
                 onClick={ redirectFromExistence } />
         </div>
     );

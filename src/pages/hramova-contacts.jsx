@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import Title from "../../components/title";
+import Title from "../components/title";
 
-class ChramovaContacts extends Component {
+class HramovaContacts extends Component {
     render() {
         return (
             <div>
@@ -11,7 +11,8 @@ class ChramovaContacts extends Component {
 
                 <div className="mt-4 mb-4 p-4 bg-light border rounded">
                     <div className="d-lg-flex justify-content-around  align-items-center">
-                        <img className="p-1" src="img/kfu-logo.png" style={{ width: 120 + "px", height: 120 + "px" }} />
+                        <img className="p-1" src="img/kfu-logo.png" style={{ width: 120 + "px", height: 120 + "px" }}
+                                alt="Логотип КФУ"/>
                         <p className="p-1">
                             <br/><b>ХРАМОВА Евгения Валерьевна</b>,
                             <br/>Кандидат политических наук,
@@ -29,4 +30,4 @@ class ChramovaContacts extends Component {
     }
 }
 
-export default ChramovaContacts;
+export default HramovaContacts;

@@ -20,8 +20,8 @@ function ConflictObject() {
 
             <FormNavigation
                 id="navigation-conflict-object"
-                backLink="/sections/conflict-existence"
-                forwardLink="/sections/conflict-reason-and-place"
+                backLink="/Hramova-test/conflict-existence"
+                forwardLink="/Hramova-test/conflict-reason-and-place"
                 onClick={ redirectFromObject } />
         </div>
     );

@@ -13,11 +13,11 @@ function Recommendation() {
             <p className="mt-3">Далее Вам будет предложено пройти тест Томаса-Килманна. Он покажет Вам наиболее типичные
                 для Вас способы решения конфликтных ситуаций.</p>
 
-            <Link to="/sections/conflict-reason-and-place">
-            <button className="mt-2 btn btn-secondary w-100">Вернуться назад</button>
+            <Link to="/Hramova-test/conflict-reason-and-place">
+                <button className="mt-2 btn btn-secondary w-100">Вернуться назад</button>
             </Link>
             <br/>
-            <Link to="/sections/tomas-kilmann-1">
+            <Link to="/Tomas-Kilmann-test/section-1">
                 <button className="mt-2 btn btn-success w-100">Перейти к тесту Томаса-Килманна</button>
             </Link>
         </div>

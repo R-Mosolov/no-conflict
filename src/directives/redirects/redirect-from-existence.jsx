@@ -7,9 +7,9 @@ function redirectFromExistence(event) {
     event.preventDefault();
 
     if (existentConflict) {
-        return window.location.pathname = '/sections/conflict-object';
+        return window.location.pathname = '/Hramova-test/conflict-object';
     } else if (nonExistentConflict) {
-        return window.location.pathname = '/consultation';
+        return window.location.pathname = '/Hramova-test/consultation';
     }
 
     return showAlert('navigation-conflict-existence');

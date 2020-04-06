@@ -7,7 +7,7 @@ function Consultation() {
         <StopPage
             specialistInNominative="конфликтологу, Евгении Валерьевне Храмовой"
             specialistInDative="Показать контакты"
-            link="/chramova-contacts"
+            link="/Hramova-contacts"
         />
     );
 }

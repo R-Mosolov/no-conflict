@@ -8,9 +8,9 @@ function redirectFromObject(event) {
     event.preventDefault();
 
     if (humanConflict || groupConflict) {
-        return window.location.pathname = '/sections/conflict-reason-and-place';
+        return window.location.pathname = '/Hramova-test/conflict-reason-and-place';
     } else if (selfConflict) {
-        return window.location.pathname = '/psychologist';
+        return window.location.pathname = '/Hramova-test/psychologist';
     }
 
     return showAlert('navigation-conflict-object');

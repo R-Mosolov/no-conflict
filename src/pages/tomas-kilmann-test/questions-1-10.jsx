@@ -45,8 +45,8 @@ function QuestionsFromOneToTen() {
                 [['a10', `${questions.q10.aA}`], ['b10', `${questions.q10.aB}`]]) }
 
             <FormNavigation
-                backLink="/sections/recommendation"
-                forwardLink="/sections/tomas-kilmann-2"
+                backLink="/Hramova-test/recommendation"
+                forwardLink="/Tomas-Kilmann-test/section-2"
                 onClick={ calculateTkFromOneToTen } />
         </div>
     );

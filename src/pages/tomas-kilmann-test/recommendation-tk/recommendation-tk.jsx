@@ -57,13 +57,16 @@ function RecommendationForTomasKilmann() {
                     на алтарь позитивного исхода конфликта, но оценить жертву некому, так как оппонент
                     так же пострадал, как и вы сами.</p></li>
             </ol>
+            <p className="p-5 bg-light border rounded"><i>Если Вам недостаточно этой информации и Вы бы хотели
+            получить её по конкретной ситуации, с учётом Вашего контекста, то рекомендуем обратиться к
+            эксперту в этой области, составившему первый тест, Евгении Храмовой.</i></p>
 
-            <Link to="/sections/tomas-kilmann-3">
+            <Link to="/Tomas-Kilmann-test/section-3">
                 <button className="mt-3 btn btn-secondary w-100">Вернуться назад</button>
             </Link>
             <br/>
-            <Link to="/">
-                <button className="mt-2 btn btn-success w-100">На главную</button>
+            <Link to="/Hramova-contacts">
+                <button className="mt-2 btn btn-success w-100">Контакты эксперта</button>
             </Link>
         </div>
     );

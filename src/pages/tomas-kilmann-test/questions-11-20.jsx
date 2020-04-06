@@ -45,8 +45,8 @@ function QuestionsFromElevenToTwenty() {
                 [['a20', `${questions.q20.aA}`], ['b20', `${questions.q20.aB}`]]) }
 
             <FormNavigation
-                backLink="/sections/tomas-kilmann-1"
-                forwardLink="/sections/tomas-kilmann-3"
+                backLink="/Tomas-Kilmann-test/section-1"
+                forwardLink="/Tomas-Kilmann-test/section-3"
                 onClick={ calculateTkFromElevenToTwenty } />
         </div>
     );

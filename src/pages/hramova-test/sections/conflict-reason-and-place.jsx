@@ -4,7 +4,7 @@ import Title from "../../../components/title";
 import FormNavigation from "../../../components/form-navigation";
 
 import createQuestion from "../../../directives/create-question/create-question";
-import calculateChramovaTest from "./recommendation/calculate-chramova-test";
+import calculateHramovaTest from "./recommendation/calculate-hramova-test";
 
 function ConflictReasonAndPlace() {
     return (
@@ -26,9 +26,9 @@ function ConflictReasonAndPlace() {
 
             <FormNavigation
                 id="navigation-conflict-reason-and-place"
-                backLink="/sections/conflict-object"
-                forwardLink="/sections/recommendation"
-                onClick={ calculateChramovaTest } />
+                backLink="/Hramova-test/conflict-object"
+                forwardLink="/Hramova-test/recommendation"
+                onClick={ calculateHramovaTest } />
         </div>
     );
 }
