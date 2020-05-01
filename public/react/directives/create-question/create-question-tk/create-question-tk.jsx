@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../create-question-tk/create-question-tk.css";
+import "./create-question-tk.css";
 
 function createQuestionForTomasKilmann(radioName, question, idsAndLabelNames) {
     function createAnswers() {
