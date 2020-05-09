@@ -1,1 +1,0 @@
-{"last":"Turing","born":1912,"first":"Alan","middle":"Mathison"},{"last":"Lovelace","born":1815,"first":"Ada"},{"last":"Lovelace","born":1815,"first":"Ada"},{}
