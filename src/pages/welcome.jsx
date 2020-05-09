@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Title from "../components/title";
+import testDb from "../db";
 
 function Welcome() {
     return (
@@ -22,9 +23,13 @@ function Welcome() {
             – <b className="text-info">под словом «оппонент»</b> – другую сторону Вашего конфликта. Например, мужа / жену,
                 работодателя / подчинённого и т.д.
 
-            <Link to="/Hramova-test/conflict-existence">
-                <button className="mt-3 btn btn-success col-12">Далее</button>
-            </Link>
+            {/*<Link to="/Hramova-test/conflict-existence">*/}
+                <button
+                    className="mt-3 btn btn-success col-12"
+                    onClick={ () => testDb() }>
+                    Далее
+                </button>
+            {/*</Link>*/}
         </div>
     );
 }
