@@ -1,37 +1,34 @@
 import React from "react";
 
 function createQuestion(radioName, question, idsAndLabelNames) {
-    function createAnswers() {
-        let arr = [];
-        const iterable = new Map(idsAndLabelNames);
+  function createAnswers() {
+    let arr = [];
+    const iterable = new Map(idsAndLabelNames);
 
-        for (let [id, labelName] of iterable) {
-            arr.push(
-                <div className="mt-1 d-flex border rounded">
-                    <div className="pt-2 pl-3 pr-3 border custom-input-bg">
-                        <input
-                            type="radio"
-                            name={ radioName }
-                            id={ id }
-                            className="answer-input"
-                        />
-                    </div>
+    for (let [id, labelName] of iterable) {
+      arr.push(
+        <div className="mt-1 d-flex border rounded">
+          <div className="pt-2 pl-3 pr-3 border custom-input-bg">
+            <input type="radio" name={radioName} id={id} className="answer" />
+          </div>
 
-                    <label className="mt-2 pl-2 pr-1" htmlFor={ id }>{ labelName }</label>
-                </div>
-            );
-        }
-
-        return arr;
+          <label className="mt-2 pl-2 pr-1" htmlFor={id}>
+            {labelName}
+          </label>
+        </div>
+      );
     }
 
-    return (
-        <div>
-            <h6 className="question mt-4 mb-3">{ question }</h6>
+    return arr;
+  }
 
-            { createAnswers() }
-        </div>
-    )
+  return (
+    <div>
+      <h6 className="question mt-4 mb-3">{question}</h6>
+
+      {createAnswers()}
+    </div>
+  );
 }
 
 export default createQuestion;
