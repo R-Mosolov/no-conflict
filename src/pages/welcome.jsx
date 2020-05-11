@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Title from "../components/title";
-const DbManager = require("../db");
-
-const dbManager = new DbManager();
 
 function Welcome() {
     return (
@@ -26,9 +23,7 @@ function Welcome() {
                 работодателя / подчинённого и т.д.
 
             <Link to="/Hramova-test/conflict-existence">
-                <button
-                    className="mt-3 btn btn-success col-12"
-                    onClick={ () => dbManager.createItem() }>
+                <button className="mt-3 btn btn-success col-12">
                     Далее
                 </button>
             </Link>

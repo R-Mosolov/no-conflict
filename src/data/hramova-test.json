@@ -1,0 +1,50 @@
+[
+  {
+    "question": {
+      "number": 1,
+      "text": 1
+    },
+    "answers": [
+      {
+        "number": 1,
+        "text": "Да, мешает"
+      }, {
+        "number": 2,
+        "text": "Нет, явного вмешательства не наблюдаю"
+      }
+    ]
+  }, {
+    "question": 2,
+    "answers": [
+      {
+        "number": 1,
+        "text": 1
+      }, {
+        "number": 2,
+        "text": 1
+      }
+    ]
+  }, {
+    "question": 3,
+    "answers": [
+      {
+        "number": 1,
+        "text": 1
+      }, {
+        "number": 2,
+        "text": 1
+      }
+    ]
+  }, {
+    "question": 4,
+    "answers": [
+      {
+        "number": 1,
+        "text": 1
+      }, {
+        "number": 2,
+        "text": 1
+      }
+    ]
+  }
+]

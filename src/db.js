@@ -7,33 +7,13 @@ const db = firebase.firestore();
 
 // CREATING CRUD FUNCTIONS
 class DbManager {
-    createItem() {
+    createItem(collName, respondentAnswers) {
+        const respondentId = `respondent-${Date.now()}`;
+
         db.collection("test-answers")
-            .add({
-                "hramovaAnswers": [
-                    {
-                        "questionName": "q1",
-                        "answerName": "a1",
-                        "creationDate": "01.01.2020, 23:23"
-                    },
-                    {
-                        "questionName": "q2",
-                        "answerName": "a2",
-                        "creationDate": "01.01.2020, 23:23"
-                    }
-                ],
-                "tomasKilmannAnswers": [
-                    {
-                        "questionName": "q1",
-                        "answerName": "a1",
-                        "creationDate": "01.01.2020, 23:23"
-                    },
-                    {
-                        "questionName": "q2",
-                        "answerName": "a2",
-                        "creationDate": "01.01.2020, 23:23"
-                    }
-                ]
+            .doc(respondentId)
+            .set({
+                [`${collName}`]: respondentAnswers
             })
             .then(function() {
                 console.log("Document successfully written!");
