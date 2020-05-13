@@ -1,8 +1,7 @@
 import showAlert from "../../../../directives/show-alert";
 
 function calculateHramovaTest(event) {
-  const emotionalConflict = document.getElementById("emotional-conflict")
-    .checked;
+  const emotionalConflict = document.getElementById("emotional-conflict").checked;
   const socialConflict = document.getElementById("social-conflict").checked;
   const rationalConflict = document.getElementById("rational-conflict").checked;
 

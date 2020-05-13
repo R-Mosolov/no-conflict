@@ -1,8 +1,8 @@
 const firebase = require("firebase");
 require("firebase/firestore"); // Required for side-effects
 
+// Initialize Cloud Firestore through Firebase
 function initializeDb() {
-  // Initialize Cloud Firestore through Firebase
   firebase.initializeApp({
     apiKey: process.env.API_KEY,
     authDomain: process.env.AUTH_DOMAIN,

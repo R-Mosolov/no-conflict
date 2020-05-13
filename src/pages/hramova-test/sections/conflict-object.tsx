@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 import Title from "../../../components/title";
 import FormNavigation from "../../../components/form-navigation";

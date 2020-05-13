@@ -1,11 +1,11 @@
-import React from "react";
-
-import Title from "../../components/title";
-import FormNavigation from "../../components/form-navigation";
-import questions from "./data/questions";
+import * as React from "react";
 
 import createQuestionForTomasKilmann from "../../directives/create-question/create-question-tk/create-question-tk";
 import calculateTkFromOneToTen from "./recommendation-tk/calculate-tk-test/calculate-tk-1-10";
+
+import Title from "../../components/title";
+import FormNavigation from "../../components/form-navigation";
+const questions = require("./data/questions.json");
 
 function QuestionsFromOneToTen() {
   return (
