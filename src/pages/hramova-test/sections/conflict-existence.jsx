@@ -5,6 +5,7 @@ import FormNavigation from "../../../components/form-navigation";
 
 import createQuestion from "../../../directives/create-question/create-question";
 import updateDb from "../../../directives/update-db";
+import hramovaTest from "../../../data/hramova-test";
 
 function ConflictExistence() {
   return (
@@ -12,12 +13,11 @@ function ConflictExistence() {
       <Title titleText="1. Наличие конфликта" />
 
       {createQuestion(
-        "conflict-type",
-        "1.1. В сложившейся ситуации Вы можете определить мешает ли кто-либо Вам " +
-          "психологически или физически реализовать свой интерес?",
+        `${hramovaTest[0].question.humanName}`,
+        `${hramovaTest[0].question.text}`,
         [
-          ["existent-conflict", "Да, мешает"],
-          ["non-existent-conflict", "Нет, явного вмешательства не наблюдаю"],
+          [hramovaTest[0].answers[0].humanName, hramovaTest[0].answers[0].text],
+          [hramovaTest[0].answers[1].humanName, hramovaTest[0].answers[1].text],
         ]
       )}
 
@@ -25,7 +25,7 @@ function ConflictExistence() {
         id="navigation-conflict-existence"
         backLink="/"
         forwardLink="/Hramova-test/conflict-object"
-        onClick={() => updateDb(0)}
+        onClick={() => updateDb()}
       />
     </div>
   );

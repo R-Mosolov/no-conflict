@@ -1,76 +1,91 @@
 [
   {
     "question": {
-      "number": "q1",
+      "dbName": "q1",
+      "humanName": "conflict-type",
       "text": "1.1. В сложившейся ситуации Вы можете определить мешает ли кто-либо Вам психологически или физически реализовать свой интерес?"
     },
     "answers": [
       {
-        "number": "a1",
+        "dbName": "a1",
+        "humanName": "existent-conflict",
         "text": "Да, мешает"
       },
       {
-        "number": "a2",
+        "dbName": "a2",
+        "humanName": "non-existent-conflict",
         "text": "Нет, явного вмешательства не наблюдаю"
       }
     ]
   },
   {
     "question": {
-      "number": "q2",
+      "dbName": "q2",
+      "humanName": "conflict-object",
       "text": "2.1. С кем Вы конфликтуете?"
     },
     "answers": [
       {
-        "number": "a1",
+        "dbName": "a1",
+        "humanName": "human-conflict",
         "text": "С человеком"
       },
       {
-        "number": "a2",
+        "dbName": "a2",
+        "humanName": "group-conflict",
         "text": "С группой людей"
       },
       {
-        "number": "a3",
+        "dbName": "a3",
+        "humanName": "self-conflict",
         "text": "С собой"
       }
     ]
   },
   {
     "question": {
-      "number": "q3",
+      "dbName": "q3",
+      "humanName": "conflict-reason",
       "text": "3.1. Почему Вы конфликтуете?"
     },
     "answers": [
       {
-        "number": "a1",
+        "dbName": "a1",
+        "humanName": "emotional-conflict",
         "text": "Мне не нравится оппонент (его слова, поступки, отношение ко мне)"
       },
       {
-        "number": "a2",
+        "dbName": "a2",
+        "humanName": "social-conflict",
         "text": "Оппонент не совпадает со мной в едином видении наших дел"
       },
       {
-        "number": "a3",
+        "dbName": "a3",
+        "humanName": "rational-conflict",
         "text": "Все, что делает оппонент, разрушает наши с ним отношения"
       }
     ]
   },
   {
     "question": {
-      "number": "q3",
+      "dbName": "q4",
+      "humanName": "conflict-place",
       "text": "3.2. Где Вы конфликтуете?"
     },
     "answers": [
       {
-        "number": "a1",
+        "dbName": "a1",
+        "humanName": "work-conflict",
         "text": "На работе"
       },
       {
-        "number": "a2",
+        "dbName": "a2",
+        "humanName": "family-conflict",
         "text": "В семье"
       },
       {
-        "number": "a3",
+        "dbName": "a3",
+        "humanName": "friend-conflict",
         "text": "В кругу знакомых / друзей"
       }
     ]
