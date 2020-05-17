@@ -1,91 +1,76 @@
 [
   {
     "question": {
-      "dbName": "q1",
-      "humanName": "conflict-type",
+      "name": "q1-conflict_type",
       "text": "1.1. В сложившейся ситуации Вы можете определить мешает ли кто-либо Вам психологически или физически реализовать свой интерес?"
     },
     "answers": [
       {
-        "dbName": "a1",
-        "humanName": "existent-conflict",
+        "name": "a1-existent_conflict",
         "text": "Да, мешает"
       },
       {
-        "dbName": "a2",
-        "humanName": "non-existent-conflict",
+        "name": "a2-non_existent_conflict",
         "text": "Нет, явного вмешательства не наблюдаю"
       }
     ]
   },
   {
     "question": {
-      "dbName": "q2",
-      "humanName": "conflict-object",
+      "name": "q2-conflict_object",
       "text": "2.1. С кем Вы конфликтуете?"
     },
     "answers": [
       {
-        "dbName": "a1",
-        "humanName": "human-conflict",
+        "name": "a1-human_conflict",
         "text": "С человеком"
       },
       {
-        "dbName": "a2",
-        "humanName": "group-conflict",
+        "name": "a2-group_conflict",
         "text": "С группой людей"
       },
       {
-        "dbName": "a3",
-        "humanName": "self-conflict",
+        "name": "a3-self_conflict",
         "text": "С собой"
       }
     ]
   },
   {
     "question": {
-      "dbName": "q3",
-      "humanName": "conflict-reason",
+      "name": "q3-conflict_reason",
       "text": "3.1. Почему Вы конфликтуете?"
     },
     "answers": [
       {
-        "dbName": "a1",
-        "humanName": "emotional-conflict",
+        "name": "a1-emotional_conflict",
         "text": "Мне не нравится оппонент (его слова, поступки, отношение ко мне)"
       },
       {
-        "dbName": "a2",
-        "humanName": "social-conflict",
+        "name": "a2-social_conflict",
         "text": "Оппонент не совпадает со мной в едином видении наших дел"
       },
       {
-        "dbName": "a3",
-        "humanName": "rational-conflict",
+        "name": "a3-rational_conflict",
         "text": "Все, что делает оппонент, разрушает наши с ним отношения"
       }
     ]
   },
   {
     "question": {
-      "dbName": "q4",
-      "humanName": "conflict-place",
+      "name": "q4-conflict_place",
       "text": "3.2. Где Вы конфликтуете?"
     },
     "answers": [
       {
-        "dbName": "a1",
-        "humanName": "work-conflict",
+        "name": "a1-work_conflict",
         "text": "На работе"
       },
       {
-        "dbName": "a2",
-        "humanName": "family-conflict",
+        "name": "a2-family_conflict",
         "text": "В семье"
       },
       {
-        "dbName": "a3",
-        "humanName": "friend-conflict",
+        "name": "a3-friend_conflict",
         "text": "В кругу знакомых / друзей"
       }
     ]

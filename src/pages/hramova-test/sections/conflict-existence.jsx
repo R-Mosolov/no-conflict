@@ -13,11 +13,11 @@ function ConflictExistence() {
       <Title titleText="1. Наличие конфликта" />
 
       {createQuestion(
-        `${hramovaTest[0].question.humanName}`,
+        `${hramovaTest[0].question.name}`,
         `${hramovaTest[0].question.text}`,
         [
-          [hramovaTest[0].answers[0].humanName, hramovaTest[0].answers[0].text],
-          [hramovaTest[0].answers[1].humanName, hramovaTest[0].answers[1].text],
+          [hramovaTest[0].answers[0].name, hramovaTest[0].answers[0].text],
+          [hramovaTest[0].answers[1].name, hramovaTest[0].answers[1].text],
         ]
       )}
 

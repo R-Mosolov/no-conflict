@@ -13,19 +13,19 @@ function ConflictObject() {
       <Title titleText="2. Тип конфликта" />
 
       {createQuestion(
-        `${hramovaTest[1].question.humanName}`,
+        `${hramovaTest[1].question.name}`,
         `${hramovaTest[1].question.text}`,
         [
           [
-            `${hramovaTest[1].answers[0].humanName}`,
+            `${hramovaTest[1].answers[0].name}`,
             `${hramovaTest[1].answers[0].text}`,
           ],
           [
-            `${hramovaTest[1].answers[1].humanName}`,
+            `${hramovaTest[1].answers[1].name}`,
             `${hramovaTest[1].answers[1].text}`,
           ],
           [
-            `${hramovaTest[1].answers[2].humanName}`,
+            `${hramovaTest[1].answers[2].name}`,
             `${hramovaTest[1].answers[2].text}`,
           ],
         ]

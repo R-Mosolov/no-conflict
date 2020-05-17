@@ -1,12 +1,14 @@
+import createUserId from "./create-user-id/create-user-id";
 const DbManager = require("../db");
 
 const dbManager = new DbManager();
+const userId = createUserId();
+const isDbDocument = dbManager.readItem(`${userId}`);
 
 function updateDb() {
   // Integrating logic with HTML
-  const pageQuestions = document.getElementsByClassName("question");
   const pageAnswers = document.getElementsByClassName("answer");
-  let respondentAnswers = [];
+  let userAnswers = [];
 
   // Searching checked checkboxes
   for (let answer of pageAnswers) {
@@ -15,7 +17,7 @@ function updateDb() {
 
     if (answer.checked) {
       // Generating data for DB from first condition
-      respondentAnswers.push({
+      userAnswers.push({
         questionName: questionDbName,
         answerName: answerDbName,
         changeDate: `${new Date(Date.now())}`,
@@ -28,7 +30,17 @@ function updateDb() {
     }
   }
 
-  console.log("respondentAnswers", respondentAnswers);
+  console.log("userAnswers", userAnswers);
+  console.log("isDbDocument", isDbDocument);
+
+  // Sending data to DB Google Firebase
+  if (userAnswers) {
+    if (isDbDocument === null) {
+      dbManager.createItem(`${userId}`, "hramova-answers", userAnswers);
+    } else {
+      dbManager.updateItem(`${userId}`, "hramova-answers", userAnswers);
+    }
+  }
 }
 
 export default updateDb;

@@ -7,19 +7,46 @@ const db = firebase.firestore();
 
 // CREATING CRUD FUNCTIONS
 class DbManager {
-  createItem(collName, respondentAnswers) {
-    const respondentId = `respondent-${Date.now()}`;
-
+  createItem(userId, collName, userAnswers) {
     db.collection("test-answers")
-      .doc(respondentId)
+      .doc(userId)
       .set({
-        [`${collName}`]: respondentAnswers,
-      })
+          [`${collName}`]: userAnswers,
+        }, { merge: true })
       .then(function () {
-        console.log("Document successfully written!");
+        console.log("Document written successfully!");
       })
       .catch(function (error) {
         console.error("Error writing document: ", error);
+      });
+  }
+
+  readItem(userId) {
+    db.collection("test-answers")
+      .doc(userId)
+      .get().then(function(doc) {
+        if (doc.exists) {
+          console.log("Document data:", doc.data());
+        } else {
+          console.log("No such document!");
+        }
+      }).catch(function(error) {
+        console.log("Error getting document:", error);
+      });
+  }
+
+  updateItem(userId, collName, userAnswers) {
+    db.collection("test-answers")
+      .doc(userId)
+      .update(
+        {
+          [`${collName}`]: userAnswers,
+      })
+      .then(function () {
+        console.log("Document successfully updated!");
+      })
+      .catch(function (error) {
+        console.error("Error updating document: ", error);
       });
   }
 

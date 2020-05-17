@@ -20,7 +20,7 @@ function createUserId() {
   }
 
   // Returning users's unique ID
-  console.log("User ID created successfully:", userIdValue);
+  console.log("User's ID created successfully:", userIdValue);
   return userIdValue;
 }
 

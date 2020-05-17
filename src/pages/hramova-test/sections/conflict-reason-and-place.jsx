@@ -13,38 +13,38 @@ function ConflictReasonAndPlace() {
       <Title titleText="3. Место и причина конфликта" />
 
       {createQuestion(
-        `${hramovaTest[2].question.humanName}`,
+        `${hramovaTest[2].question.name}`,
         `${hramovaTest[2].question.text}`,
         [
           [
-            `${hramovaTest[2].answers[0].humanName}`,
+            `${hramovaTest[2].answers[0].name}`,
             `${hramovaTest[2].answers[0].text}`,
           ],
           [
-            `${hramovaTest[2].answers[1].humanName}`,
+            `${hramovaTest[2].answers[1].name}`,
             `${hramovaTest[2].answers[1].text}`,
           ],
           [
-            `${hramovaTest[2].answers[2].humanName}`,
+            `${hramovaTest[2].answers[2].name}`,
             `${hramovaTest[2].answers[2].text}`,
           ],
         ]
       )}
 
       {createQuestion(
-        `${hramovaTest[3].question.humanName}`,
+        `${hramovaTest[3].question.name}`,
         `${hramovaTest[3].question.text}`,
         [
           [
-            `${hramovaTest[3].answers[0].humanName}`,
+            `${hramovaTest[3].answers[0].name}`,
             `${hramovaTest[3].answers[0].text}`,
           ],
           [
-            `${hramovaTest[3].answers[1].humanName}`,
+            `${hramovaTest[3].answers[1].name}`,
             `${hramovaTest[3].answers[1].text}`,
           ],
           [
-            `${hramovaTest[3].answers[2].humanName}`,
+            `${hramovaTest[3].answers[2].name}`,
             `${hramovaTest[3].answers[2].text}`,
           ],
         ]
