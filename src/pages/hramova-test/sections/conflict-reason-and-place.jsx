@@ -4,7 +4,7 @@ import Title from "../../../components/title";
 import FormNavigation from "../../../components/form-navigation";
 
 import createQuestion from "../../../directives/create-question/create-question";
-import updateDb from "../../../directives/update-db";
+import manageDb from "../../../server/manage-db";
 import hramovaTest from "../../../data/hramova-test";
 
 function ConflictReasonAndPlace() {
@@ -54,7 +54,7 @@ function ConflictReasonAndPlace() {
         id="navigation-conflict-reason-and-place"
         backLink="/Hramova-test/conflict-object"
         forwardLink="/Hramova-test/recommendation"
-        onClick={() => updateDb()}
+        onClick={() => manageDb()}
       />
     </div>
   );
