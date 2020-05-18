@@ -4,6 +4,9 @@ integration conflictology and IT. Technological stack: JavaScript (React.js), No
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Frontend Architecture
+![File:Frontend Architecture](./public/img/front-architecture.svg "Frontend Architecture")
+
 ## Available Scripts
 
 In the project directory, you can run:
