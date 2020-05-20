@@ -49,18 +49,9 @@ function App() {
             component={Recommendation}
           />
 
-          <Route
-            path="/Hramova-contacts"
-            component={HramovaContacts}
-          />
-          <Route
-            path="/Hramova-test/psychologist"
-            component={Psychologist}
-          />
-          <Route
-            path="/Hramova-test/consultation"
-            component={Consultation}
-          />
+          <Route path="/Hramova-contacts" component={HramovaContacts} />
+          <Route path="/Hramova-test/psychologist" component={Psychologist} />
+          <Route path="/Hramova-test/consultation" component={Consultation} />
 
           <Route
             path="/Tomas-Kilmann-test/section-1"

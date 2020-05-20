@@ -1,9 +1,9 @@
-/** This module generating CRUD-method(s) to work with DB (Google Firebase) */
+/** This module generating CRUD-method(s) to work with DBSM (Google Firebase) */
 
 // Defining variables
 const firebase = require("firebase");
 require("firebase/firestore"); // Required for side-effects
-const initializeDb = require("./server/modules/initialize-db");
+const initializeDb = require("./db");
 
 // Connecting to DB (Google Firebase)
 initializeDb();

@@ -1,8 +1,10 @@
+// This module keeps parameters for connecting to DBSM (Google Firebase)
+
 const firebase = require("firebase");
 require("firebase/firestore"); // Required for side-effects
 
 // Initialize Cloud Firestore through Firebase
-function initializeDb() {
+function db() {
   firebase.initializeApp({
     apiKey: process.env.API_KEY,
     authDomain: process.env.AUTH_DOMAIN,
@@ -14,4 +16,4 @@ function initializeDb() {
   });
 }
 
-module.exports = initializeDb;
+module.exports = db;

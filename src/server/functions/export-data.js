@@ -1,7 +1,9 @@
+/** This module converts data from JSON to TXT format for the domain area's expert */
+
 const fs = require("fs");
 const firebase = require("firebase");
 require("firebase/firestore"); // Required for side-effects
-const initializeDb = require("./initialize-db");
+const initializeDb = require("../db");
 
 initializeDb();
 const db = firebase.firestore();
