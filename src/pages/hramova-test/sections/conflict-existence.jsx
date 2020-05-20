@@ -3,7 +3,7 @@ import React from "react";
 import Title from "../../../components/title";
 import FormNavigation from "../../../components/form-navigation";
 
-import createQuestion from "../../../directives/create-question/create-question";
+import createQuestion from "../../../functions/create-question/create-question";
 import manageDb from "../../../server/manage-db";
 import hramovaTest from "../../../data/hramova-test";
 

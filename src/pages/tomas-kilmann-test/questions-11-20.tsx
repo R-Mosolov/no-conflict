@@ -4,7 +4,7 @@ import Title from "../../components/title";
 import FormNavigation from "../../components/form-navigation";
 import questions from "./data/questions.json";
 
-import createQuestionForTomasKilmann from "../../directives/create-question/create-question-tk/create-question-tk";
+import createQuestionForTomasKilmann from "../../functions/create-question/create-question-tk/create-question-tk";
 import calculateTkFromElevenToTwenty from "./recommendation-tk/calculate-tk-test/calculate-tk-11-20";
 
 function QuestionsFromElevenToTwenty() {

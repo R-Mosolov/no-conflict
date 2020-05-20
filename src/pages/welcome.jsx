@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import Title from "../components/title";
-import createUserId from "../directives/create-user-id/create-user-id";
+import createUserId from "../functions/create-user-id/create-user-id";
 
 function Welcome() {
   return (

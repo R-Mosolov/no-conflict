@@ -1,4 +1,4 @@
-import showAlert from "../../../../directives/show-alert";
+import showAlert from "../../../../functions/show-alert";
 
 function calculateHramovaTest(event) {
   const emotionalConflict = document.getElementById("emotional-conflict")

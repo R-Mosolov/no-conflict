@@ -1,4 +1,4 @@
-import createUserId from "../directives/create-user-id/create-user-id";
+import createUserId from "../functions/create-user-id/create-user-id";
 const DbManager = require("../db-methods");
 
 const dbManager = new DbManager();
