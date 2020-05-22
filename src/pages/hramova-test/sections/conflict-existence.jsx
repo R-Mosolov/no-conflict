@@ -25,7 +25,7 @@ function ConflictExistence() {
         id="navigation-conflict-existence"
         backLink="/"
         forwardLink="/Hramova-test/conflict-object"
-        onClick={() => sendToDb()}
+        onClick={() => sendToDb("hramova-test", "hramova-test-answer")}
       />
     </div>
   );

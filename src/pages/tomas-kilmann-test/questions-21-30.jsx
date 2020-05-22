@@ -156,7 +156,7 @@ function QuestionsFromTwentyOneToThirty() {
       <FormNavigation
         backLink="/Tomas-Kilmann-test/section-2"
         forwardLink="/Tomas-Kilmann-test/recommendation"
-        onClick={() => sendToDb()}
+        onClick={() => sendToDb("tomas-kilmann-test", "tk-test-answer")}
       />
     </div>
   );

@@ -3,16 +3,17 @@ import React from "react";
 function createQuestion(radioName, question, idsAndLabelNames) {
   function createAnswers() {
     let arr = [];
+    let keyNumber = Math.random() * 10000;
     const iterable = new Map(idsAndLabelNames);
 
     for (let [id, labelName] of iterable) {
       arr.push(
         <div className="mt-1 d-flex border rounded">
           <div className="pt-2 pl-3 pr-3 border custom-input-bg">
-            <input type="radio" name={radioName} id={id} className="answer" />
+            <input type="radio" name={radioName} id={id} className="hramova-test-answer" key={keyNumber} />
           </div>
 
-          <label className="mt-2 pl-2 pr-1" htmlFor={id}>
+          <label className="mt-2 pl-2 pr-1" htmlFor={id} key={keyNumber}>
             {labelName}
           </label>
         </div>

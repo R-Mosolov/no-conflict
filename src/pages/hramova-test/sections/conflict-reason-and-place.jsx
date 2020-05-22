@@ -54,7 +54,7 @@ function ConflictReasonAndPlace() {
         id="navigation-conflict-reason-and-place"
         backLink="/Hramova-test/conflict-object"
         forwardLink="/Hramova-test/recommendation"
-        onClick={() => sendToDb()}
+        onClick={() => sendToDb("hramova-test", "hramova-test-answer")}
       />
     </div>
   );
