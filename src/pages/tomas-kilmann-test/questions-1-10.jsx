@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import Title from "../../components/title";
-import FormNavigation from "../../components/form-navigation";
+import SectionNavigation from "../../components/section-navigation";
 
 import createQuestionForTomasKilmann from "../../functions/create-question/create-question-tk/create-question-tk";
 import sendToDb from "../../server/functions/send-to-db";
@@ -153,7 +153,7 @@ function QuestionsFromOneToTen() {
         ]
       )}
 
-      <FormNavigation
+      <SectionNavigation
         backLink="/Hramova-test/recommendation"
         forwardLink="/Tomas-Kilmann-test/section-2"
         onClick={() => sendToDb("tomas-kilmann-test", "tk-test-answer")}

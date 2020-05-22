@@ -1,7 +1,7 @@
 import React from "react";
 
 import Title from "../../../components/title";
-import FormNavigation from "../../../components/form-navigation";
+import SectionNavigation from "../../../components/section-navigation";
 
 import createQuestion from "../../../functions/create-question/create-question";
 import sendToDb from "../../../server/functions/send-to-db";
@@ -21,7 +21,7 @@ function ConflictExistence() {
         ]
       )}
 
-      <FormNavigation
+      <SectionNavigation
         id="navigation-conflict-existence"
         backLink="/"
         forwardLink="/Hramova-test/conflict-object"

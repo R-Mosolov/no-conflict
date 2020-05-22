@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import Title from "../../../components/title";
-import FormNavigation from "../../../components/form-navigation";
+import SectionNavigation from "../../../components/section-navigation";
 
 import createQuestion from "../../../functions/create-question/create-question";
 import sendToDb from "../../../server/functions/send-to-db";
@@ -31,8 +31,7 @@ function ConflictObject() {
         ]
       )}
 
-      <FormNavigation
-        id="navigation-conflict-object"
+      <SectionNavigation
         backLink="/Hramova-test/conflict-existence"
         forwardLink="/Hramova-test/conflict-reason-and-place"
         onClick={() => sendToDb("hramova-test", "hramova-test-answer")}

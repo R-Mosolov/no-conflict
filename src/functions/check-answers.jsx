@@ -1,21 +1,33 @@
+/** This module checks how much test's answers an user has filled */
+
+// Importing dependencies
 import showAlert from "./show-alert";
 
-function checkAnswers(ids, id) {
-  const questionNumber = document.getElementsByClassName("question").length;
-  const allAnswersNumber = document.getElementsByClassName("answer").length;
-  let markedAnswersNumber = 0;
+function checkAnswers() {
 
-  for (let i = 0; i < allAnswersNumber; i++) {
-    if (document.getElementById(`${ids[i]}`).checked) {
-      markedAnswersNumber += 1;
+  // Searching all answers
+  const sectionNavigation = document.getElementById("navigation-conflict-existence");
+  const questionsQuantity = document.getElementsByClassName("question").length;
+  const allAnswersQuantity = document.getElementsByClassName("hramova-test-answer").length;
+  const allAnswersList = document.getElementsByClassName("hramova-test-answer");
+  let markedAnswersQuantity = 0;
+  const haveAllQuestionsChecked = markedAnswersQuantity === questionsQuantity;
+
+  // Checking answers occupation
+  for (let i = 0; i < allAnswersQuantity; i++) {
+    if (allAnswersList[i].checked) {
+      markedAnswersQuantity += 1;
     }
   }
 
-  if (markedAnswersNumber === questionNumber) {
+  // Handling occupied and blank answers
+  if (haveAllQuestionsChecked) {
     alert("Получены ответы на все вопросы.");
   } else {
-    return showAlert(id);
+    sectionNavigation.setAttribute("forwardLink", "/Hramova-test/conflict-object");
+    return showAlert();
   }
 }
 
+// Exporting the module
 export default checkAnswers;

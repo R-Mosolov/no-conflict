@@ -1,6 +1,8 @@
 /** This module manages data by sending to DB when user finishes a test's block */
 
+// Importing dependencies
 import createUserId from "../../functions/create-user-id/create-user-id";
+import checkAnswers from "../../functions/check-answers";
 const DbManager = require("../crud");
 
 // Defining variables
@@ -8,6 +10,10 @@ const dbManager = new DbManager();
 const userId = createUserId();
 let userAnswers = [];
 
+/**
+ * @param {string} collName - The DB collection's name in which we send user test's answers
+ * @param {string} inputClassName - The class name defined all possible answers that exists into a test's section
+ */
 function sendToDb(collName, inputClassName) {
   // Integrating logic with HTML
   const pageAnswers = document.getElementsByClassName(inputClassName);
@@ -38,7 +44,7 @@ function sendToDb(collName, inputClassName) {
     }
   }
 
-  // Sending data to DB Google Firebase
+  Sending data to DB Google Firebase
   if (userAnswers) {
     dbManager.createItem(
         userId,
@@ -46,6 +52,8 @@ function sendToDb(collName, inputClassName) {
         JSON.parse(localStorage.getItem("userAnswers"))
     );
   }
+
+  checkAnswers();
 }
 
 export default sendToDb;
