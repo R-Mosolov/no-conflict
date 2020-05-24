@@ -1,12 +1,11 @@
 /** This module checks how much test's answers an user has filled */
 
 // Importing dependencies
-import showAlert from "./show-alert";
+import renderError from "./render-error";
 
 function checkAnswers() {
 
   // Searching all answers
-  const sectionNavigation = document.getElementById("navigation-conflict-existence");
   const questionsQuantity = document.getElementsByClassName("question").length;
   const allAnswersQuantity = document.getElementsByClassName("hramova-test-answer").length;
   const allAnswersList = document.getElementsByClassName("hramova-test-answer");
@@ -24,8 +23,7 @@ function checkAnswers() {
   if (haveAllQuestionsChecked) {
     alert("Получены ответы на все вопросы.");
   } else {
-    sectionNavigation.setAttribute("forwardLink", "/Hramova-test/conflict-object");
-    return showAlert();
+    return renderError("navigation-conflict-existence");
   }
 }
 

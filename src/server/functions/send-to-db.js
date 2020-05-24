@@ -44,7 +44,7 @@ function sendToDb(collName, inputClassName) {
     }
   }
 
-  Sending data to DB Google Firebase
+  // Sending data to DB Google Firebase
   if (userAnswers) {
     dbManager.createItem(
         userId,

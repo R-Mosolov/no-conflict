@@ -1,4 +1,4 @@
-import showAlert from "../show-alert";
+import showAlert from "../render-error";
 
 function redirectFromExistence(event) {
   const existentConflict = document.getElementById("existent-conflict").checked;

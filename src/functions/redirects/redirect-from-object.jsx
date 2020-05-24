@@ -1,4 +1,4 @@
-import showAlert from "../show-alert";
+import showAlert from "../render-error";
 
 function redirectFromObject(event) {
   const humanConflict = document.getElementById("human-conflict").checked;
