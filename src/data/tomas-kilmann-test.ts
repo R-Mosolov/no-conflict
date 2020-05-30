@@ -574,3 +574,4 @@ const tomasKilmannTest: object[] = [
 ];
 
 export default tomasKilmannTest;
+module.exports = tomasKilmannTest;
