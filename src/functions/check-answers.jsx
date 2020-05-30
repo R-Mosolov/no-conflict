@@ -4,10 +4,11 @@
 import renderError from "./render-error";
 
 function checkAnswers() {
-
   // Searching all answers
   const questionsQuantity = document.getElementsByClassName("question").length;
-  const allAnswersQuantity = document.getElementsByClassName("hramova-test-answer").length;
+  const allAnswersQuantity = document.getElementsByClassName(
+    "hramova-test-answer"
+  ).length;
   const allAnswersList = document.getElementsByClassName("hramova-test-answer");
   let markedAnswersQuantity = 0;
   const haveAllQuestionsChecked = markedAnswersQuantity === questionsQuantity;

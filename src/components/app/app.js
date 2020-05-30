@@ -18,7 +18,7 @@ import ConflictReasonAndPlace from "../../pages/hramova-test/sections/conflict-r
 import Recommendation from "../../pages/hramova-test/sections/recommendation/recommendation";
 
 // Importing pages of Tomas-Kilmann's test
-import QuestionsFromOneToTen from "../../pages/tomas-kilmann-test/questions-1-10";
+import QuestionsFromOneToTen from "../../pages/tomas-kilmann-test/questions-1_10";
 import QuestionsFromElevenToTwenty from "../../pages/tomas-kilmann-test/questions-11-20";
 import QuestionsFromTwentyOneToThirty from "../../pages/tomas-kilmann-test/questions-21-30";
 import RecommendationForTomasKilmann from "../../pages/tomas-kilmann-test/recommendation-tk/recommendation-tk";

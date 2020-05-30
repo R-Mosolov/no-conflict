@@ -10,7 +10,13 @@ function createQuestion(radioName, question, idsAndLabelNames) {
       arr.push(
         <div className="mt-1 d-flex border rounded">
           <div className="pt-2 pl-3 pr-3 border custom-input-bg">
-            <input type="radio" name={radioName} id={id} className="hramova-test-answer" key={keyNumber} />
+            <input
+              type="radio"
+              name={radioName}
+              id={id}
+              className="hramova-test-answer"
+              key={keyNumber}
+            />
           </div>
 
           <label className="mt-2 pl-2 pr-1" htmlFor={id} key={keyNumber}>

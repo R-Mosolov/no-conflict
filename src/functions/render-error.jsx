@@ -1,7 +1,6 @@
 /** This module returns alert if an user hasn't filled test's answers */
 
 function renderError(fieldId) {
-
   // Initialization variables
   const field = document.getElementById(`${fieldId}`);
   let errorField = document.createElement("div");

@@ -21,7 +21,7 @@ function sendToDb(collName, inputClassName) {
   // Checking a new section ("Is it Tomas-Kilmann's test?")
   if (window.location.pathname === "/Tomas-Kilmann-test/section-1") {
     userAnswers = [];
-    localStorage.removeItem('userAnswers');
+    localStorage.removeItem("userAnswers");
   }
 
   // Searching checked checkboxes
@@ -47,9 +47,9 @@ function sendToDb(collName, inputClassName) {
   // Sending data to DB Google Firebase
   if (userAnswers) {
     dbManager.createItem(
-        userId,
-        collName,
-        JSON.parse(localStorage.getItem("userAnswers"))
+      userId,
+      collName,
+      JSON.parse(localStorage.getItem("userAnswers"))
     );
   }
 

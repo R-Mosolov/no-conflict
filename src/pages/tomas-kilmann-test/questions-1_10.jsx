@@ -8,8 +8,8 @@ import sendToDb from "../../server/functions/send-to-db";
 import tomasKilmannTest from "../../data/tomas-kilmann-test";
 
 function renderQuestionsAndAnswers() {
-  const firstQuestionNumber = 20;
-  const lastQuestionNumber = 30;
+  const firstQuestionNumber = 0;
+  const lastQuestionNumber = 10;
   let questionList = [];
 
   for (let item = firstQuestionNumber; item < lastQuestionNumber; item++) {
@@ -34,7 +34,7 @@ function renderQuestionsAndAnswers() {
   return questionList;
 }
 
-function QuestionsFromTwentyOneToThirty() {
+function QuestionsFromOneToTen() {
   return (
     <div>
       <Title titleText="Тест Томаса-Килманна" />
@@ -42,12 +42,12 @@ function QuestionsFromTwentyOneToThirty() {
       {renderQuestionsAndAnswers()}
 
       <SectionNavigation
-        backLink="/Tomas-Kilmann-test/section-2"
-        forwardLink="/Tomas-Kilmann-test/recommendation"
+        backLink="/Hramova-test/recommendation"
+        forwardLink="/Tomas-Kilmann-test/section-2"
         onClick={() => sendToDb("tomas-kilmann-test", "tk-test-answer")}
       />
     </div>
   );
 }
 
-export default QuestionsFromTwentyOneToThirty;
+export default QuestionsFromOneToTen;
