@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import Title from "../../../components/title";
-import renderConflictStrategy from "./render-conflict-strategy";
+import Title from '../../../components/title';
+import renderConflictStrategy from './render-conflict-strategy';
 
 function RecommendationForTomasKilmann() {
   return (

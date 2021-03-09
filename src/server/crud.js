@@ -1,9 +1,9 @@
 /** This module generating CRUD-method(s) to work with DBSM (Google Firebase) */
 
 // Defining variables
-const firebase = require("firebase");
-require("firebase/firestore"); // Required for side-effects
-const initializeDb = require("./db");
+const firebase = require('firebase');
+require('firebase/firestore'); // Required for side-effects
+const initializeDb = require('./db');
 
 // Connecting to DB (Google Firebase)
 initializeDb();
@@ -18,7 +18,7 @@ class DbManager {
    * @return
    */
   createItem(userId, collName, userAnswers) {
-    db.collection("test-answers")
+    db.collection('test-answers')
       .doc(userId)
       .set(
         {
@@ -27,10 +27,10 @@ class DbManager {
         { merge: true }
       )
       .then(function () {
-        console.log("Document written successfully!");
+        console.log('Document written successfully!');
       })
       .catch(function (error) {
-        console.error("Error writing document: ", error);
+        console.error('Error writing document: ', error);
       });
   }
 }

@@ -1,15 +1,15 @@
 /** This module checks how much test's answers an user has filled */
 
 // Importing dependencies
-import renderError from "./render-error";
+import renderError from './render-error';
 
 function checkAnswers() {
   // Searching all answers
-  const questionsQuantity = document.getElementsByClassName("question").length;
+  const questionsQuantity = document.getElementsByClassName('question').length;
   const allAnswersQuantity = document.getElementsByClassName(
-    "hramova-test-answer"
+    'hramova-test-answer'
   ).length;
-  const allAnswersList = document.getElementsByClassName("hramova-test-answer");
+  const allAnswersList = document.getElementsByClassName('hramova-test-answer');
   let markedAnswersQuantity = 0;
   const haveAllQuestionsChecked = markedAnswersQuantity === questionsQuantity;
 
@@ -22,9 +22,9 @@ function checkAnswers() {
 
   // Handling occupied and blank answers
   if (haveAllQuestionsChecked) {
-    alert("Получены ответы на все вопросы.");
+    alert('Получены ответы на все вопросы.');
   } else {
-    return renderError("navigation-conflict-existence");
+    return renderError('navigation-conflict-existence');
   }
 }
 

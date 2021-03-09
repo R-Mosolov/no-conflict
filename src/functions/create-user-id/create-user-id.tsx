@@ -12,11 +12,11 @@ function createUserId() {
   const currentDateInUTC = Date.now();
   const uniqueId = Math.round(Math.random() * 100000);
   const userIdTemplate = `user-created_${currentDateInUTC}-ID_${uniqueId}`;
-  const userIdValue = localStorage.getItem("userId");
+  const userIdValue = localStorage.getItem('userId');
 
   // Checking ID existence
   if (userIdValue === null) {
-    localStorage.setItem("userId", userIdTemplate);
+    localStorage.setItem('userId', userIdTemplate);
   }
 
   // Returning users's unique ID

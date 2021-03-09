@@ -1,27 +1,27 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import "./app.css";
-import "../../functions/alert-about-closing";
+import './app.css';
+import '../../functions/alert-about-closing';
 
 // Importing global pages
-import Logo from "../logo/logo";
-import Welcome from "../../pages/welcome";
-import HramovaContacts from "../../pages/hramova-contacts";
-import Psychologist from "../../pages/hramova-test/stop-pages/psychologist";
-import Consultation from "../../pages/hramova-test/stop-pages/consultation";
+import Logo from '../logo/logo';
+import Welcome from '../../pages/welcome';
+import HramovaContacts from '../../pages/hramova-contacts';
+import Psychologist from '../../pages/hramova-test/stop-pages/psychologist';
+import Consultation from '../../pages/hramova-test/stop-pages/consultation';
 
 // Importing pages of Hramova's test
-import ConflictExistence from "../../pages/hramova-test/sections/conflict-existence";
-import ConflictObject from "../../pages/hramova-test/sections/conflict-object";
-import ConflictReasonAndPlace from "../../pages/hramova-test/sections/conflict-reason-and-place";
-import Recommendation from "../../pages/hramova-test/sections/recommendation/recommendation";
+import ConflictExistence from '../../pages/hramova-test/sections/conflict-existence';
+import ConflictObject from '../../pages/hramova-test/sections/conflict-object';
+import ConflictReasonAndPlace from '../../pages/hramova-test/sections/conflict-reason-and-place';
+import Recommendation from '../../pages/hramova-test/sections/recommendation/recommendation';
 
 // Importing pages of Tomas-Kilmann's test
-import QuestionsFromOneToTen from "../../pages/tomas-kilmann-test/questions-1_10";
-import QuestionsFromElevenToTwenty from "../../pages/tomas-kilmann-test/questions-11-20";
-import QuestionsFromTwentyOneToThirty from "../../pages/tomas-kilmann-test/questions-21-30";
-import RecommendationForTomasKilmann from "../../pages/tomas-kilmann-test/recommendation-tk/recommendation-tk";
+import QuestionsFromOneToTen from '../../pages/tomas-kilmann-test/questions-1_10';
+import QuestionsFromElevenToTwenty from '../../pages/tomas-kilmann-test/questions-11-20';
+import QuestionsFromTwentyOneToThirty from '../../pages/tomas-kilmann-test/questions-21-30';
+import RecommendationForTomasKilmann from '../../pages/tomas-kilmann-test/recommendation-tk/recommendation-tk';
 
 function App() {
   return (

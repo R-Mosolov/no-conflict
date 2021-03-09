@@ -1,7 +1,7 @@
-import * as React from "react";
-import { Link } from "react-router-dom";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
 
-import Title from "../../../../components/title";
+import Title from '../../../../components/title';
 
 function Recommendation() {
   return (
@@ -13,7 +13,7 @@ function Recommendation() {
         ситуации:
       </p>
       <p className="p-5 bg-light border rounded">
-        <i>"{localStorage.getItem("recommendation-text")}"</i>
+        <i>"{localStorage.getItem('recommendation-text')}"</i>
       </p>
       <p className="mt-3">
         Далее Вам будет предложено пройти тест Томаса-Килманна. Он покажет Вам
