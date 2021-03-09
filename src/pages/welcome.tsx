@@ -1,8 +1,8 @@
-import * as React from "react";
-import { Link } from "react-router-dom";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
 
-import Title from "../components/title";
-import createUserId from "../functions/create-user-id/create-user-id";
+import Title from '../components/title';
+import createUserId from '../functions/create-user-id/create-user-id';
 
 function Welcome() {
   return (

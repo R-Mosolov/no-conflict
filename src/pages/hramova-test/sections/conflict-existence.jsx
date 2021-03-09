@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import Title from "../../../components/title";
-import SectionNavigation from "../../../components/section-navigation";
+import Title from '../../../components/title';
+import SectionNavigation from '../../../components/section-navigation';
 
-import createQuestion from "../../../functions/create-question/create-question";
-import sendToDb from "../../../server/functions/send-to-db";
-import hramovaTest from "../../../data/hramova-test";
+import createQuestion from '../../../functions/create-question/create-question';
+import sendToDb from '../../../server/functions/send-to-db';
+import hramovaTest from '../../../data/hramova-test';
 
 function ConflictExistence() {
   return (
@@ -25,7 +25,7 @@ function ConflictExistence() {
         id="navigation-conflict-existence"
         backLink="/"
         // forwardLink="/Hramova-test/conflict-object"
-        onClick={() => sendToDb("hramova-test", "hramova-test-answer")}
+        onClick={() => sendToDb('hramova-test', 'hramova-test-answer')}
       />
     </div>
   );

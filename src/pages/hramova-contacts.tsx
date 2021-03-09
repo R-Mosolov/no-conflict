@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import Title from "../components/title";
+import Title from '../components/title';
 
 class HramovaContacts extends Component {
   render() {
@@ -14,7 +14,7 @@ class HramovaContacts extends Component {
             <img
               className="p-1"
               src="img/kfu-logo.png"
-              style={{ width: 120 + "px", height: 120 + "px" }}
+              style={{ width: 120 + 'px', height: 120 + 'px' }}
               alt="Логотип КФУ"
             />
             <p className="p-1">

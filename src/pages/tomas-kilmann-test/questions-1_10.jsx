@@ -1,11 +1,11 @@
-import * as React from "react";
+import * as React from 'react';
 
-import Title from "../../components/title";
-import SectionNavigation from "../../components/section-navigation";
+import Title from '../../components/title';
+import SectionNavigation from '../../components/section-navigation';
 
-import createQuestionForTomasKilmann from "../../functions/create-question/create-question-tk/create-question-tk";
-import sendToDb from "../../server/functions/send-to-db";
-import tomasKilmannTest from "../../data/tomas-kilmann-test";
+import createQuestionForTomasKilmann from '../../functions/create-question/create-question-tk/create-question-tk';
+import sendToDb from '../../server/functions/send-to-db';
+import tomasKilmannTest from '../../data/tomas-kilmann-test';
 
 function renderQuestionsAndAnswers() {
   const firstQuestionNumber = 0;
@@ -44,7 +44,7 @@ function QuestionsFromOneToTen() {
       <SectionNavigation
         backLink="/Hramova-test/recommendation"
         forwardLink="/Tomas-Kilmann-test/section-2"
-        onClick={() => sendToDb("tomas-kilmann-test", "tk-test-answer")}
+        onClick={() => sendToDb('tomas-kilmann-test', 'tk-test-answer')}
       />
     </div>
   );

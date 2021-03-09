@@ -1,15 +1,21 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import Title from "./title";
+import Title from './title';
 
-class StopPage extends Component {
+interface Props {
+  specialistInNominative: string;
+  link: string;
+  specialistInDative: string;
+}
+
+class StopPage extends Component<Props> {
   render() {
     return (
       <div>
         <Title titleText="К сожалению, мы не сможем Вам помочь!" />
         <p className="mt-3">
-          Пожалуйста, обратитесь к квалифицированному{" "}
+          Пожалуйста, обратитесь к квалифицированному{' '}
           {this.props.specialistInNominative}.
         </p>
 
