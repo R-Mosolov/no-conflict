@@ -1,4 +1,20 @@
-const tomasKilmannTest: object[] = [
+interface TomasKilmannTestConfig {
+  [index: number]: {
+    question: {
+      name: string;
+      text: string;
+    },
+    answers: {
+      [index: number]: {
+        name: string;
+        text: string;
+        conflictStrategy: string;
+      }
+    }
+  }
+}
+
+const tomasKilmannTest: TomasKilmannTestConfig = [
   {
     question: {
       name: "q1",
@@ -574,4 +590,5 @@ const tomasKilmannTest: object[] = [
 ];
 
 export default tomasKilmannTest;
-module.exports = tomasKilmannTest;
+// Uncomit this before test run
+// module.exports = tomasKilmannTest;

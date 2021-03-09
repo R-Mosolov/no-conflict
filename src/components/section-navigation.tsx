@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class SectionNavigation extends Component {
+interface Props {
+  id: string;
+  backLink: string;
+  forwardLink: string;
+  onClick: () => {};
+}
+
+class SectionNavigation extends Component<Props> {
   render() {
     return (
       <nav className="section-navigation mt-3" id={this.props.id}>

@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 
 import Title from "./title";
 
-class StopPage extends Component {
+interface Props {
+  specialistInNominative: string;
+  link: string;
+  specialistInDative: string;
+}
+
+class StopPage extends Component<Props> {
   render() {
     return (
       <div>

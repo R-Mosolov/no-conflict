@@ -1,12 +1,12 @@
 function calculateTkTest() {
-  let confrontation = 0;
-  let collaboration = 0;
-  let compromise = 0;
-  let digression = 0;
-  let adaptation = 0;
+  let confrontation: number = 0;
+  let collaboration: number = 0;
+  let compromise: number = 0;
+  let digression: number = 0;
+  let adaptation: number = 0;
 
-  function checkAnswerById(id) {
-    return document.getElementById(`${id}`).checked;
+  function checkAnswerById(id: string) {
+    return (<HTMLInputElement> document.getElementById(`${id}`)).checked;
   }
 
   if (checkAnswerById("a1")) digression += 1;
@@ -39,11 +39,11 @@ function calculateTkTest() {
   if (checkAnswerById("a10")) confrontation += 1;
   if (checkAnswerById("b10")) compromise += 1;
 
-  localStorage.setItem("confrontation", confrontation);
-  localStorage.setItem("collaboration", collaboration);
-  localStorage.setItem("compromise", compromise);
-  localStorage.setItem("digression", digression);
-  localStorage.setItem("adaptation", adaptation);
+  localStorage.setItem("confrontation", confrontation.toString());
+  localStorage.setItem("collaboration", collaboration.toString());
+  localStorage.setItem("compromise", compromise.toString());
+  localStorage.setItem("digression", digression.toString());
+  localStorage.setItem("adaptation", adaptation.toString());
 }
 
 export default calculateTkTest;

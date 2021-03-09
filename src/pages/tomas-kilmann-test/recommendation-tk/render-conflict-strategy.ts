@@ -1,7 +1,7 @@
 const Chart = require("chart.js");
 
 function renderConflictStrategy() {
-  const ctx = document.getElementById("conflict-strategy").getContext("2d");
+  const ctx = (<HTMLCanvasElement>document.getElementById("conflict-strategy"))?.getContext("2d");
 
   const data = {
     datasets: [

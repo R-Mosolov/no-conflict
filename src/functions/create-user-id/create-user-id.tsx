@@ -10,7 +10,7 @@ function createUserId() {
 
   // Creating template of ID
   const currentDateInUTC = Date.now();
-  const uniqueId = Math.round(Math.random() * 100000, 0);
+  const uniqueId = Math.round(Math.random() * 100000);
   const userIdTemplate = `user-created_${currentDateInUTC}-ID_${uniqueId}`;
   const userIdValue = localStorage.getItem("userId");
 

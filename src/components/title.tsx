@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
-class Title extends Component {
+interface Props {
+  titleText: string;
+}
+
+class Title extends Component<Props> {
   render() {
     return (
       <div>
